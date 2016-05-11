@@ -19,7 +19,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   <li><a href="#a0" class="w3-hover-none w3-hover-text-grey w3-padding-large">HOME</a></li>
   <li><a href="#a1" class="w3-hover-none w3-hover-text-grey w3-padding-large">Who Am I</a></li>
   <li><a href="#a2" class="w3-hover-none w3-hover-text-grey w3-padding-large">Map</a></li>
-  <li><a href="#a3" class="w3-hover-none w3-hover-text-grey w3-padding-large">CONTACT</a></li>
+  <li><a href="#a3" class="w3-hover-none w3-hover-text-grey w3-padding-large">Contact</a></li>
 </ul>
 </div>
 
@@ -96,26 +96,62 @@ google.maps.event.addDomListener(window, 'load', initialize);
 <div id="a3" class="w3-container w3-content w3-padding-hor-64 w3-light-grey w3-center" style="max-width:100%;height:500px">
   <h2 class="w3-wide w3-center">CONTACT</h2>
   <ul class="soc" >
-    <li><a class="soc-github" href="https://github.com/VagrantPi" target="_blank" ></a></li>
+    <li><a class="soc-github" href="https://github.com/VagrantPi" target="_blank" style="width=200%" ></a></li>
     <li><a class="soc-twitter" href="https://twitter.com/VagrantPi" target="_blank" ></a></li>
     <li><a class="soc-facebook" href="https://www.facebook.com/VagrantPi" target="_blank" ></a></li>
     <li><a class="soc-email1" href="javascript:shemail()"></a></li>
   </ul>
 </div>
     
-<script>
-    function shemail(){
-        alert("My email : ap5552477@yahoo.com.tw");
-    }
     
-</script>
+<!--  ************************* homework *************************  -->
+<div class="w3-container w3-teal w3-center w3-xxlarge">
+    <a id="test" onmouseover="mOver(this)" onmouseout="mOut(this)" onmousedown="mDown(this)" onmouseup="mUp(this)">Test</a>
+    <div class="w3-large">
+        now is <a id="nowtime"></a><br>
+    </div>
+</div>
+<!--  ************************* homework *************************  -->    
+    
+    
 <script>
+  function shemail(){
+    alert("My email : ap5552477@yahoo.com.tw");
+  }
+    
+  //************************* homework *************************  
+  var now = setInterval(myTimer, 1000);
+  var d = new Date(); 
+  function myTimer() {
+    document.getElementById("nowtime").innerHTML = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+  } 
+  
+  function mOver(obj) {
+    obj.style.color = "#ff0000";
+  } 
+    
+  function mOut(obj) {
+    obj.style.color = "#ffffff";
+  }
+    
+  function mDown(obj) {     
+    obj.innerHTML = d;
+  }
+
+  function mUp(obj) {
+    obj.innerHTML = "Test";
+  }
+  //************************* homework *************************
+
+    
+    
   window.onDomReady(
     function(){
 　　   new SmoothScroll({duration: 600});
     }
   );
-  
+    
+
     
 </script>
 
