@@ -11,7 +11,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-navbar, label {font-family: "Montserrat", sans-serif}
 .mySlides {display:none;}
 </style>
-<body>
+<body onload="checkCookies()"><!--  ************************* homework *************************  -->
 
 <!-- Navbar -->
 <div class="w3-top">
@@ -110,6 +110,8 @@ google.maps.event.addDomListener(window, 'load', initialize);
     <div class="w3-large">
         now is <a id="nowtime"></a><br>
     </div>
+    <p id="size"></p>
+    <p id="cookie"></p>
 </div>
 <!--  ************************* homework *************************  -->    
     
@@ -143,6 +145,22 @@ google.maps.event.addDomListener(window, 'load', initialize);
   function mUp(obj) {
     obj.innerHTML = "Test";
   }
+    
+  var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  var h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+  var x = document.getElementById("size");
+  x.innerHTML = "Browser inner window width: " + w + ", height: " + h + ".";
+
+  function checkCookies() {
+    var text = "";
+    if (navigator.cookieEnabled == true) {
+        text = "Cookies are enabled.";
+    } else {
+        text = "Cookies are not enabled.";
+    }
+    document.getElementById("cookie").innerHTML = text;
+  }
+
   //************************* homework *************************
 
     
