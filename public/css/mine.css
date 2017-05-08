@@ -1,0 +1,11 @@
+.avatar {
+  width: 30%;
+  display:block;
+  margin:auto;
+  border-radius: 50% !important;
+  box-shadow: 5px 5px 5px #333 !important;
+}
+
+.nolinkline {
+  text-decoration: none;
+}
