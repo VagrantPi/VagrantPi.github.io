@@ -5,7 +5,33 @@
   border-radius: 50% !important;
   box-shadow: 5px 5px 5px #333 !important;
 }
-
 .nolinkline {
   text-decoration: none;
 }
+.tags {
+	border-radius: 5px;
+	padding: .2em .6em .3em;
+	font-weight: bold;
+	background-color: #268bd2;
+	color: white;
+	font-style: normal;
+	opacity: 0.7;
+  box-shadow: 3px 5px 8px black;
+}
+.tags-status {
+  display: inline-block;
+  margin: 0 12px 12px 0;
+}
+.archiveli {
+  list-style: none;
+  padding: 0 0 15px;
+}
+.archiveli .month {
+  width: 10%;
+  vertical-align: top;
+  color: #9a9a9a;
+}
+.archiveli div {
+  display: inline-block;
+}
+
