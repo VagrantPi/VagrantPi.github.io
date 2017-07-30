@@ -4,7 +4,7 @@
  <title>VagarntPi Blog</title>
  <link href="http://0.0.0.0:4000/atom.xml" rel="self"/>
  <link href="http://0.0.0.0:4000/"/>
- <updated>2017-07-31T01:04:43+08:00</updated>
+ <updated>2017-07-31T01:40:06+08:00</updated>
  <id>http://0.0.0.0:4000</id>
  <author>
    <name>VagrantPi</name>
@@ -13,7 +13,7 @@
 
  
  <entry>
-   <title>Vue x Note x CookBook</title>
+   <title>Vue x 筆記 x 速查表(更新中~)</title>
    <link href="http://0.0.0.0:4000/2017/07/30/vue/"/>
    <updated>2017-07-30T00:00:00+08:00</updated>
    <id>http://0.0.0.0:4000/2017/07/30/vue</id>
