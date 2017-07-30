@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Archives
+title: History
 ---
 <ul class="archive">
   {% for post in site.posts %}

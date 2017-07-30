@@ -1,34 +1,46 @@
 # Dependencies
 markdown:         redcarpet
-highlighter:      pygments
+highlighter:      rouge
+redcarpet:
+    extensions: ["no_intra_emphasis", "tables", "autolink", "strikethrough", "with_toc_data"]
 
 # Permalinks
 # permalink: /:year-:month-:day-:title/
 permalink:        pretty
-future: true
+future:           true
 # relative_permalinks: true
 
 # Setup
 title:            VagarntPi Blog
-tagline:          '生活札記'
-description:      '生活札記'
+tagline:          'JavaScript, Front-End, Back-End, Full Stack, Linux, 筆記, 生活札記'
+description:      '生活札記，記錄些學習筆記和生活'
 url:              http://vagrantpi.github.io
 baseurl:          /
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:           'VagrantPi'
+  url:            https://twitter.com/VagrantPi
 
 paginate:         5
 
 # Custom vars
 version:          2.1.0
 
+twitter:
+  username:       VagrantPi
+
 github:
   repo:           https://github.com/poole/hyde
 
-  host: 0.0.0.0
-  port: 4000
-
+  host:           0.0.0.0
+  port:           4000
+  logo:           /public/favicon.ico
 # Gems
-  gems: [jekyll-paginate]
+gems:             ["jekyll-paginate"]
+
+
+social:
+  links:
+    - https://github.com/VagrantPi
+    - https://twitter.com/VagrantPi
+    - https://www.facebook.com/VagrantPi
