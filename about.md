@@ -11,7 +11,7 @@ title: About
   Hi 我是VagrantPi，平常喜歡接觸各式各樣的東西，是位艦隊豚、IDOLM廚、偶爾會到幻想鄉泡泡茶，喜歡的音樂有 Metal 樂、古典、民謠、OST 等。
 </p>
 <p class="message">
-  對於潮潮的技術總是會跳下去玩，所以特愛前端，自稱二次元觀測員、Full Stack Developer(邁進中)，常出沒在各社群跟年會，有興趣可以交流交流
+  對於潮潮的技術都很有興趣，所以特愛前端(?)，自稱二次元觀測員、Full Stack Developer(邁進中)，常出沒在各社群跟年會，有興趣可以交流交流~
 </p>
 
 </div>
