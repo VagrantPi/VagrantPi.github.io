@@ -14,12 +14,9 @@ future:           true
 title:            VagarntPi Blog
 tagline:          'JavaScript, Front-End, Back-End, Full Stack, Linux, 筆記, 生活札記'
 description:      '生活札記，記錄些學習筆記和生活'
-url:              http://vagrantpi.github.io
 baseurl:          /
 
-author:
-  name:           'VagrantPi'
-  url:            https://twitter.com/VagrantPi
+author:           VagarntPi
 
 paginate:         5
 
@@ -32,8 +29,6 @@ twitter:
 github:
   repo:           https://github.com/poole/hyde
 
-  host:           0.0.0.0
-  port:           4000
   logo:           /public/favicon.ico
 # Gems
 gems:             ["jekyll-paginate"]
