@@ -2,60 +2,60 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-      <loc>http://vagrantpi.github.io/2017/08/03/eslint/</loc>
+      <loc>http://localhost:4000/2017/08/03/eslint/</loc>
     </url>
 
     <url>
-      <loc>http://vagrantpi.github.io/2017/07/30/vue/</loc>
+      <loc>http://localhost:4000/2017/07/30/vue/</loc>
     </url>
 
 
     <url>
-      <loc>http://vagrantpi.github.io/404.html</loc>
+      <loc>http://localhost:4000/404.html</loc>
     </url>
 
     <url>
-      <loc>http://vagrantpi.github.io/History/</loc>
+      <loc>http://localhost:4000/History/</loc>
     </url>
 
     <url>
-      <loc>http://vagrantpi.github.io/TagCloud/</loc>
+      <loc>http://localhost:4000/TagCloud/</loc>
     </url>
 
     <url>
-      <loc>http://vagrantpi.github.io/about/</loc>
+      <loc>http://localhost:4000/about/</loc>
     </url>
 
     <url>
-      <loc>http://vagrantpi.github.io/atom.xml</loc>
+      <loc>http://localhost:4000/atom.xml</loc>
     </url>
 
     <url>
-      <loc>http://vagrantpi.github.io/</loc>
+      <loc>http://localhost:4000/</loc>
     </url>
 
     <url>
-      <loc>http://vagrantpi.github.io/robots.txt</loc>
+      <loc>http://localhost:4000/robots.txt</loc>
     </url>
 
     <url>
-      <loc>http://vagrantpi.github.io/sitemap.xml</loc>
+      <loc>http://localhost:4000/sitemap.xml</loc>
     </url>
 
     <url>
-      <loc>http://vagrantpi.github.io/tags/Vue/</loc>
+      <loc>http://localhost:4000/tags/Vue/</loc>
     </url>
 
     <url>
-      <loc>http://vagrantpi.github.io/tags/JavaScript/</loc>
+      <loc>http://localhost:4000/tags/JavaScript/</loc>
     </url>
 
     <url>
-      <loc>http://vagrantpi.github.io/tags/Note/</loc>
+      <loc>http://localhost:4000/tags/Note/</loc>
     </url>
 
     <url>
-      <loc>http://vagrantpi.github.io/tags/Eslint/</loc>
+      <loc>http://localhost:4000/tags/Eslint/</loc>
     </url>
 
 </urlset>

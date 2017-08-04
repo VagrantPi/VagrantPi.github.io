@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>VagarntPi Blog</title>
- <link href="http://vagrantpi.github.io/atom.xml" rel="self"/>
- <link href="http://vagrantpi.github.io/"/>
- <updated>2017-08-05T00:35:38+08:00</updated>
- <id>http://vagrantpi.github.io</id>
+ <link href="http://localhost:4000/atom.xml" rel="self"/>
+ <link href="http://localhost:4000/"/>
+ <updated>2017-08-05T02:58:20+08:00</updated>
+ <id>http://localhost:4000</id>
  <author>
    <name></name>
    <email></email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Eslint 筆記</title>
-   <link href="http://vagrantpi.github.io/2017/08/03/eslint/"/>
+   <link href="http://localhost:4000/2017/08/03/eslint/"/>
    <updated>2017-08-03T00:00:00+08:00</updated>
-   <id>http://vagrantpi.github.io/2017/08/03/eslint</id>
+   <id>http://localhost:4000/2017/08/03/eslint</id>
    <content type="html">&lt;p&gt;最近開始重視 Coding Style 的公司(其實原本 Review 時都會說了)&lt;/p&gt;
 
 &lt;p&gt;開始要我們使用 Eslint 了，不過一開始裝來玩時，因為不會改改設定檔，所以很快就棄坑了 ┐(´д`)┌&lt;/p&gt;
@@ -175,9 +175,9 @@
  
  <entry>
    <title>Vue x 筆記 x 速查表(更新中~)</title>
-   <link href="http://vagrantpi.github.io/2017/07/30/vue/"/>
+   <link href="http://localhost:4000/2017/07/30/vue/"/>
    <updated>2017-07-30T00:00:00+08:00</updated>
-   <id>http://vagrantpi.github.io/2017/07/30/vue</id>
+   <id>http://localhost:4000/2017/07/30/vue</id>
    <content type="html">&lt;h1 id=&quot;vue-der&quot;&gt;Vue 感覺猛猛Der&lt;/h1&gt;
 
 &lt;p&gt;原本想寫篇 Vue 系列筆記，不過中文文件太詳細啦(廢話~)&lt;/p&gt;

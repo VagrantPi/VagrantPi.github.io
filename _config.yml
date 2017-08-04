@@ -33,7 +33,9 @@ github:
 
   logo:           /public/favicon.ico
 # Gems
-gems:             ["jekyll-paginate"]
+gems:             
+  - jekyll-paginate
+  - jekyll-seo-tag
 
 
 social:
