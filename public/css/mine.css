@@ -37,4 +37,10 @@ body{
 .archiveli div {
   display: inline-block;
 }
-
+.indeximg {
+  float:right;
+  margin:0 0 10px 10px;
+  box-shadow: 10px 11px 13px 0px grey;
+  max-height: 150px;
+  max-width: 150px;
+}
