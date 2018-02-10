@@ -13,7 +13,7 @@ future:           true
 # Setup
 title:            VagarntPi Blog
 tagline:          'JavaScript, Front-End, Back-End, Full Stack, Linux, 筆記, 生活札記'
-description:      '生活札記，記錄些學習筆記和生活'
+description:      'The more you know, the more you know you don't know.
 baseurl:          /
 
 author:           VagarntPi
