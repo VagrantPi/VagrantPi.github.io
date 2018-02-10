@@ -1,37 +1,37 @@
 # Dependencies
 markdown:kramdown
-highlighter:      rouge
+highlighter:rouge
 redcarpet:
     extensions: ["no_intra_emphasis", "tables", "autolink", "strikethrough", "with_toc_data"]
 
 # Permalinks
 # permalink: /:year-:month-:day-:title/
-permalink:        pretty
-future:           true
+permalink:pretty
+future:true
 # relative_permalinks: true
 
 # Setup
-title:            VagarntPi Blog
-tagline:          'JavaScript, Front-End, Back-End, Full Stack, Linux, 筆記, 生活札記'
-description:      'The more you know, the more you know you don't know.
-baseurl:          /
+title:VagarntPi Blog
+tagline:'JavaScript, Front-End, Back-End, Full Stack, Linux, 筆記, 生活札記'
+description:'The more you know, the more you know you don't know.
+baseurl:/
 
-author:           VagarntPi
-url:              http://vagrantpi.github.io
+author:VagarntPi
+url:http://vagrantpi.github.io
 
-paginate:         5
+paginate:5
 
 
 # Custom vars
-version:          2.1.0
+version:2.1.0
 
 twitter:
-  username:       VagrantPi
+  username:VagrantPi
 
 github:
-  repo:           https://github.com/poole/hyde
+  repo:https://github.com/poole/hyde
 
-  logo:           /public/favicon.ico
+  logo:/public/favicon.ico
 # Gems
 gems:             
   - jekyll-paginate
