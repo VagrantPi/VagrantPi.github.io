@@ -1,8 +1,7 @@
 # Dependencies
-markdown:         kramdown
-highlighter:      rouge
-redcarpet:
-    extensions: ["no_intra_emphasis", "tables", "autolink", "strikethrough", "with_toc_data"]
+markdown:kramdown
+highlighter:rouge
+redcarpet:extensions:["no_intra_emphasis", "tables", "autolink", "strikethrough", "with_toc_data"]
 
 # Permalinks
 # permalink: /:year-:month-:day-:title/
@@ -36,6 +35,10 @@ github:
 gems:             
   - jekyll-paginate
   - jekyll-seo-tag
+
+# plugins:
+  # - jekyll-seo-tag
+  # - jekyll-paginate
 
 
 social:
