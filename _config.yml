@@ -32,7 +32,8 @@ github:
 
   logo:/public/favicon.ico
 # Gems
-gems:             
+plugins:
+  - jekyll-sitemap
   - jekyll-paginate
   - jekyll-seo-tag
 
