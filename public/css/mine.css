@@ -55,16 +55,24 @@ body{
 #directory ul, ol, dl {
   margin-bottom: 0;
 }
-.post-directory {
-  border: 1px solid #d7d7d7;
-  border-radius: 8px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  transition: 0.2s linear;
-  overflow: hidden;
-  position: fixed;
-  bottom: 50px;
-  right: 0;
-  background-color: white;
-  font-size: 15px;
-  padding-top: 20px;
+.post-directory h3 {
+  margin-left: 0px;
+  font-size: 40px;
+}
+@media screen and (min-width: 1450px) {
+  .post-directory h3 {
+    margin-left: 20px;
+  }
+  .post-directory {
+    border: 1px solid #d7d7d7;
+    border-radius: 8px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    transition: 0.2s linear;
+    overflow: hidden;
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    background-color: white;
+    font-size: 15px;
+  }
 }
