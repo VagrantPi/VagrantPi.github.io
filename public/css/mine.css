@@ -62,6 +62,7 @@ body{
 @media screen and (min-width: 1450px) {
   .post-directory h3 {
     margin-left: 20px;
+    font-size: 25px;
   }
   .post-directory {
     border: 1px solid #d7d7d7;
