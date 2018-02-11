@@ -17,8 +17,7 @@ description:      '生活札記，記錄些學習筆記和生活'
 baseurl:          /
 
 author:           VagarntPi
-# url:              http://vagrantpi.github.io
-url:              /
+url:              http://vagrantpi.github.io
 
 paginate:         5
 
