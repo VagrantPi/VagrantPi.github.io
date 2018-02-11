@@ -1,0 +1,46 @@
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js"></script>
+
+
+
+<script>
+  $().ready(function() {
+    var titles = Array.prototype.slice.call(document.querySelectorAll('h2,h3'), 0).filter(function(data) {
+      return data.id != "";
+    })
+    var liFlat = 1; ulFlat = 1; ulAcount = 0;
+    for(var value of titles) {
+
+      if(value.tagName === "H2") {
+        ulFlat = 1;
+        liFlat = 1;
+      } else {
+        liFlat = 0;
+      }
+      
+      if(value.tagName === "H3" && ulFlat === 0) {
+        ulFlat = 1;
+      } else {
+        ulFlat = 0;
+      }
+
+      if(liFlat) {
+        $("#directory").append("<li><a href='#"+value.id+"'>"+value.innerText+"</a></li>")
+      } else {
+        if(ulFlat) {
+          $("#directory").append("<ul id='ulAcount"+ulAcount+"'><li><a href='#"+value.id+"'>"+value.innerText+"</a></li></ul>")
+          ulAcount += 1;
+        } else {
+          ulFlat = 0;
+          $("#ulAcount"+ulAcount).append("<li><a href='#"+value.id+"'>"+value.innerText+"</a></li>")
+        }
+      }
+    }
+    $('#li-init').remove();
+  });
+</script>
+
+<div class="post-directory">
+  <ul id="directory">
+    <li id="li-init"></li>
+  </ul>
+</div>
