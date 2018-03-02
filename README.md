@@ -4,5 +4,5 @@
 
 Blog 使用 [hyde](https://github.com/poole/hyde) 建置
 
-Website: http://vagrantpi.github.io/
+Website: https://vagrantpi.github.io/
 
