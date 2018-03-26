@@ -38,10 +38,10 @@ Warning: Exited with error code 1 Use --force to continue.
 Aborted due to warnings.
 npm ERR! code ELIFECYCLE
 npm ERR! errno 6
-npm ERR! viptjob@1.6.0 build-dev: `grunt dev`
+npm ERR! myproject@1.6.0 build-dev: `grunt dev`
 npm ERR! Exit status 6
 npm ERR! 
-npm ERR! Failed at the viptjob@1.6.0 build-dev script.
+npm ERR! Failed at the myproject@1.6.0 build-dev script.
 npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
 
 npm ERR! A complete log of this run can be found in:
