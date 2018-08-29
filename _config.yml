@@ -11,7 +11,7 @@ future:           true
 # relative_permalinks: true
 
 # Setup
-title:            VagarntPi Blog
+title:            VagrantPi Blog
 tagline:          'JavaScript, Front-End, Back-End, Full Stack, Linux, 筆記, 生活札記'
 description:      '生活札記，記錄些學習筆記和生活'
 baseurl:          /
