@@ -27,7 +27,7 @@ imgalt: アンゴルモア 元寇合戦記 logo
 
 上 PV 先
 
-{% youtube 9h8o9oX3kz8 %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9h8o9oX3kz8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## 導讀
 
