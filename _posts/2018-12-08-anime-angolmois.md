@@ -9,8 +9,6 @@ imgurl: /public/img/index/angolmois-logo.jpg
 imgalt: アンゴルモア 元寇合戦記 logo
 ---
 
-# アンゴルモア 元寇合戦記
-
 ## 前言
 
 > **\* 文中有部分據透!!**
