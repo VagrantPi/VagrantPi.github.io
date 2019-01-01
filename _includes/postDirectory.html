@@ -11,29 +11,37 @@
     for(var value of titles) {
 
       if(value.tagName === "H2") {
-        ulFlat = 1;
-        liFlat = 1;
-      } else {
-        liFlat = 0;
+        $("#directory").append("<li><a href='#"+value.id+"'>"+value.innerText+"</a></li>")
+      }
+      if(value.tagName === "H3") {
+        $("#directory").append("<ul id='ulAcount"+ulAcount+"'><li><a href='#"+value.id+"'>"+value.innerText+"</a></li></ul>")
+        ulAcount++
       }
       
-      if(value.tagName === "H3" && ulFlat === 0) {
-        ulFlat = 1;
-      } else {
-        ulFlat = 0;
-      }
+      // if(value.tagName === "H2") {
+      //   ulFlat = 1;
+      //   liFlat = 1;
+      // } else {
+      //   liFlat = 0;
+      // }
+      
+      // if(value.tagName === "H3" && ulFlat === 0) {
+      //   ulFlat = 1;
+      // } else {
+      //   ulFlat = 0;
+      // }
 
-      if(liFlat) {
-        $("#directory").append("<li><a href='#"+value.id+"'>"+value.innerText+"</a></li>")
-      } else {
-        if(ulFlat) {
-          $("#directory").append("<ul id='ulAcount"+ulAcount+"'><li><a href='#"+value.id+"'>"+value.innerText+"</a></li></ul>")
-          ulAcount += 1;
-        } else {
-          ulFlat = 0;
-          $("#ulAcount"+ulAcount).append("<li><a href='#"+value.id+"'>"+value.innerText+"</a></li>")
-        }
-      }
+      // if(liFlat) {
+      //   $("#directory").append("<li><a href='#"+value.id+"'>"+value.innerText+"</a></li>")
+      // } else {
+      //   if(ulFlat) {
+      //     $("#directory").append("<ul id='ulAcount"+ulAcount+"'><li><a href='#"+value.id+"'>"+value.innerText+"</a></li></ul>")
+      //     ulAcount += 1;
+      //   } else {
+      //     ulFlat = 0;
+      //     $("#ulAcount"+ulAcount).append("<li><a href='#"+value.id+"'>"+value.innerText+"</a></li>")
+      //   }
+      // }
     }
     $('#li-init').remove();
   });
