@@ -67,7 +67,9 @@ go:
 
 ```go
 type Aggregate interface {
-  Interator() Interator
+  Iterator() Iterator
+  // 這邊會多個 Append 為了方便 Aggregate 的 instance(bookShelf) 可以直接使用 Append 這個 Method
+  Append(interface{})
 }
 ```
 
@@ -91,9 +93,9 @@ public interface Iterator {
 go:
 
 ```go
-type Interator interface {
+type Iterator interface {
   HasNext() bool
-  Next() book.Book
+  Next() interface{}
 }
 ```
 
@@ -196,27 +198,28 @@ func (b *BookShelf) GetBookAt(index int) book.Book {
   return b.books[index]
 }
 
-func (b *BookShelf) AppendBook(abook book.Book) {
+func (b *BookShelf) Append(abook interface{}) {
   if b.GetLen() >= len(b.books) {
-  newBooks := make([]book.Book, b.last*2)
-  for index, item := range b.books {
-  newBooks[index] = item
+    newBooks := make([]book.Book, b.last*2)
+    for index, item := range b.books {
+      newBooks[index] = item
+    }
+    b.books = newBooks
   }
-  b.books = newBooks
-  }
-  b.books[b.last] = abook
+  b.books[b.last] = abook.(book.Book)
   b.last++
-
 }
 
 func (b *BookShelf) GetLen() int {
   return b.last
 }
 
-func (b *BookShelf) Interator() BookShelfIterator {
+func (b *BookShelf) Iterator() Iterator {
   i := &BookShelfIterator{}
-  return i.BookShelfIterator(b)
+  i.BookShelfIterator(b)
+  return i
 }
+
 ```
 
 #### BookShelfIterator
@@ -253,11 +256,9 @@ go:
 ```go
 package model
 
-import "design_pattern/1.iterator/book"
-
-type Interator interface {
+type Iterator interface {
   HasNext() bool
-  Next() book.Book
+  Next() interface{}
 }
 
 type BookShelfIterator struct {
@@ -273,7 +274,7 @@ func (b *BookShelfIterator) BookShelfIterator(bookShelf *BookShelf) BookShelfIte
 
 func (b *BookShelfIterator) HasNext() bool {
   if b.index < b.bookShelf.GetLen() {
-  return true
+    return true
   }
   return false
 }
@@ -319,24 +320,26 @@ import (
 )
 
 func main() {
-  bookShelf := &model.BookShelf{}
-  bookShelf.BookShelf(4)
+  var bookShelf model.Aggregate
+  b := &model.BookShelf{}
+  b.BookShelf(3)
+  bookShelf = b
   aBook := &book.Book{}
   aBook.SetName("Around the World in 80 Days")
-  bookShelf.AppendBook(*aBook)
+  bookShelf.Append(*aBook)
   bBook := &book.Book{}
   bBook.SetName("Bible")
-  bookShelf.AppendBook(*bBook)
+  bookShelf.Append(*bBook)
   cBook := &book.Book{}
   cBook.SetName("Cinderella")
-  bookShelf.AppendBook(*cBook)
+  bookShelf.Append(*cBook)
   dBook := &book.Book{}
   dBook.SetName("Daddy-Long-Legs")
-  bookShelf.AppendBook(*dBook)
-  it := bookShelf.Interator()
+  bookShelf.Append(*dBook)
+  it := bookShelf.Iterator()
   for it.HasNext() {
-  book := it.Next().(book.Book)
-  fmt.Println(book.GetName())
+    book := it.Next().(book.Book)
+    fmt.Println(book.GetName())
   }
 }
 ```
@@ -377,11 +380,11 @@ func (b *BookShelf) GetBookAt(index int) book.Book {
   return aBook
 }
 
-func (b *BookShelf) AppendBook(abook book.Book) {
+func (b *BookShelf) Append(abook interface{}) {
   if len(b.books) == 0 {
-  b.books = abook.GetName()
+    b.books = abook.(book.Book).GetName()
   } else {
-  b.books = b.books + "," + abook.GetName()
+    b.books = b.books + "," + abook.(book.Book).GetName()
   }
 }
 
@@ -390,9 +393,10 @@ func (b *BookShelf) GetLen() int {
   return len(s)
 }
 
-func (b *BookShelf) Interator() BookShelfIterator {
+func (b *BookShelf) Iterator() Iterator {
   i := &BookShelfIterator{}
-  return i.BookShelfIterator(b)
+  i.BookShelfIterator(b)
+  return i
 }
 ```
 
