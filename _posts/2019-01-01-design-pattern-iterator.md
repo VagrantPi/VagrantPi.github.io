@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Design Pattern - Iterator Pattern 筆記"
+title: "Design Pattern 筆記 - Iterator Pattern"
 subtitle: 圖解設計模式讀書筆記 - Iterator Pattern
-description: "Iterator Pattern 筆記"
+description: "Iterator Pattern 筆記，與 golang 的實作"
 author: VagrantPi
 tags: Design_Pattern Note
 imgurl: /public/img/index/gopher.jpg
@@ -53,7 +53,7 @@ BookShelfIterator | 遍歷書架的 class
 
 #### Aggregate
 
-Iterator Pattern 功能的集合(只有 Interator 的 Interface)
+Iterator Pattern 功能的集合(只有 Iterator 的 Interface)
 
 java:
 
@@ -69,6 +69,7 @@ go:
 type Aggregate interface {
   Iterator() Iterator
   // 這邊會多個 Append 為了方便 Aggregate 的 instance(bookShelf) 可以直接使用 Append 這個 Method
+  // Iterator Pattern 並不存在 Append 的 interface
   Append(interface{})
 }
 ```
@@ -112,10 +113,10 @@ java:
 public class Book {
   private String name;
   public Book(String name) {
-  this.name = name;
+    this.name = name;
   }
   public String getName() {
-  return name;
+    return name;
   }
 }
 ```
@@ -154,20 +155,20 @@ public class BookShelf implements Aggregate {
   private Book[] books;
   private int last = 0;
   public BookShelf(int maxsize) {
-  this.books = new Book[maxsize];
+    this.books = new Book[maxsize];
   }
   public Book getBookAt(int index) {
-  return books[index];
+    return books[index];
   }
   public void appendBook(Book book) {
-  this.books[last] = book;
-  last++;
+    this.books[last] = book;
+    last++;
   }
   public int getLength() {
-  return last;
+    return last;
   }
   public Iterator iterator() {
-  return new BookShelfIterator(this);
+    return new BookShelfIterator(this);
   }
 }
 ```
@@ -200,12 +201,18 @@ func (b *BookShelf) GetBookAt(index int) book.Book {
 
 func (b *BookShelf) Append(abook interface{}) {
   if b.GetLen() >= len(b.books) {
+    // 這邊會 new 一個新空間會 *2 並沒有什麼特別的考量與設計，單純是實作時想到了另一篇關於 slice 文章的利自有用也是這樣做
+    // https://blog.golang.org/go-slices-usage-and-internals
     newBooks := make([]book.Book, b.last*2)
     for index, item := range b.books {
       newBooks[index] = item
     }
     b.books = newBooks
   }
+  // 這邊沒使用 append 來塞值的原因在於，BookShelf 在 new 完一個 array 在使用 append 塞值，就會從新 array 後塞入
+  // EX: 
+  //   BookShelf(3) 後 [book.Book{}, book.Book{}, book.Book{}]
+  //   append 新值 [book.Book{}, book.Book{}, book.Book{}, book.Book(新值)]
   b.books[b.last] = abook.(book.Book)
   b.last++
 }
@@ -233,20 +240,20 @@ public class BookShelfIterator implements Iterator {
   private BookShelf bookShelf;
   private int index;
   public BookShelfIterator(BookShelf bookshelf) {
-  this.bookShelf = bookShelf;
-  this.index = 0;
+    this.bookShelf = bookShelf;
+    this.index = 0;
   }
   public boolean hasNext() {
-  if(index < bookShelf.getLength()) {
-  return true;
-  } else {
-  return false;
-  }
+    if(index < bookShelf.getLength()) {
+      return true;
+    } else {
+      return false;
+    }
   }
   public Object next() {
-  Book book = bookShelf.getBookAt(index);
-  index++;
-  return book;
+    Book book = bookShelf.getBookAt(index);
+    index++;
+    return book;
   }
 }
 ```
@@ -293,16 +300,16 @@ java:
 ```java
 public class Main {
   public static void main(String[] args) {
-  BookShelf bookShelf = new BookShelf(4);
-  bookShelf.appendBook(new Book("Around the World in 80 Days"))
-  bookShelf.appendBook(new Book("Bible"))
-  bookShelf.appendBook(new Book("Cinderella"))
-  bookShelf.appendBook(new Book("Daddy-Long-Legs"))
-  Iterator it = bookShelf.iterator();
-  while (it.hasNext()) {
-  Book book = (Book)it.next();
-  System.out.println(book.getName());
-  }
+    BookShelf bookShelf = new BookShelf(4);
+    bookShelf.appendBook(new Book("Around the World in 80 Days"))
+    bookShelf.appendBook(new Book("Bible"))
+    bookShelf.appendBook(new Book("Cinderella"))
+    bookShelf.appendBook(new Book("Daddy-Long-Legs"))
+    Iterator it = bookShelf.iterator();
+    while (it.hasNext()) {
+      Book book = (Book)it.next();
+      System.out.println(book.getName());
+    }
   }
 }
 ```
@@ -404,8 +411,13 @@ func (b *BookShelf) Iterator() Iterator {
 
 ## 結語
 
-> 文中的 [Source Code](https://github.com/VagrantPi/golang-design-pattern/tree/master/1.iterator) 都放在 github 了
+> 文中的 [Source Code](https://github.com/VagrantPi/golang-design-pattern/tree/master/1.iterator) 都放在 github 了，自己 clone 下來玩玩吧
 
 小弟新手 gopher，這也是第一次看 design pattern 所以如果有任何錯誤還請幫忙指正
 
 目標是兩個禮拜發一篇啦，這邊累積的文章太少了，不過拖更什麼的也是很正常的 \_(:3 ⌒ﾞ)\_
+
+## 系列文章
+
+- [Design Pattern 筆記 - Iterator Pattern]({{ site.url }}/2019/01/01/design-pattern-iterator/)
+- [Design Pattern 筆記 - Adapter Pattern]({{ site.url }}/2019/01/01/design-pattern-adapter/)
