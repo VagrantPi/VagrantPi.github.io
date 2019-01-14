@@ -25,8 +25,8 @@ Adapter Pattern 也被稱為 Wrapper Pattern，替我們將 A 包裝成 B 可以
 
 然後又可以分成下面兩種：
 
-- Class Adapter (使用繼承)
 - Object Adapter (使用 delegation)
+- Class Adapter (使用繼承)
 
 下面範例為：
 
@@ -43,16 +43,16 @@ class `Banner`(規格Ｂ)，分別有 `ShowWithParen()`、`ShowWithAster()` 兩 
 
 > 一樣的本書使用的是 java 當範例，所以我一起附上了
 
-## Class Adapter
+## Object Adapter
 
 ### Class Diagram
 
-![Adapter Pattern(Class)](/public/img/post/design_pattern/adapter_pattern(class).jpg)
+![Adapter Pattern(Object)](/public/img/post/design_pattern/adapter_pattern(object).jpg)
 
 name | descreption
 -----|------------
-Print | Print interface(規格Ａ)
-PrintBanner | Print instance, extends Banner(Adapter)
+Print | Print class(規格Ａ)
+PrintBanner | extends Print(Adapter)
 Banner | Banner class(規格Ｂ)
 
 ### 範例一
@@ -101,7 +101,7 @@ func (b *Banner) ShowWithAster() {
 java:
 
 ```java
-public abstract interface Print {
+public abstract class Print {
   public abstract void printWeek();
   public abstract void printStrong();
 }
@@ -109,27 +109,23 @@ public abstract interface Print {
 
 go:
 
-```go
-type Print interface {
-	PrintWeek()
-	PrintStrong()
-}
-```
+這邊的 Print class 是定義好需要的方法後再讓 PrintBanner 繼承，因為 golang 沒繼承，所以這邊就沒做了
 
 #### PrintBanner
 
 java:
 
 ```java
-public class PrintBanner extends Banner implements Print {
+public class PrintBanner extends Print {
+  private Banner banner;
   public PrintBanner(String string) {
-    super(string)
+    this.banner = new Banner(string)
   }
   public void printWeek() {
-    showWithParen()
+    banner.showWithParen()
   }
   public void printStrong() {
-    showWithAster()
+    banner.showWithAster()
   }
 }
 ```
@@ -137,7 +133,7 @@ public class PrintBanner extends Banner implements Print {
 go:
 
 ```go
-// PrintBanner 繼承 Banner 並實作 Print
+// PrintBanner 繼承 Print
 // 因為 golang 中並沒有繼承，所以這邊使用 Embedding struct 來實作
 type PrintBanner struct {
 	banner.Banner
@@ -176,41 +172,55 @@ go:
 func main() {
 	pb := &model.PrintBanner{}
 	pb.PrintBanner("Hello")
-	var p model.Print = pb
-	// p (規格 A) 透過 PrintBanner(adapter) 使用 Banner(規格 B)的方法
-	p.PrintWeek()
-	p.PrintStrong()
+	// 透過 PrintBanner(adapter) 可以直接使用 Banner(規格 B)的方法
+	pb.PrintWeek()
+	pb.PrintStrong()
 }
 ```
 
-## Object Adapter
+
+## Class Adapter
 
 ### Class Diagram
 
-![Adapter Pattern(Object)](/public/img/post/design_pattern/adapter_pattern(object).jpg)
+![Adapter Pattern(Class)](/public/img/post/design_pattern/adapter_pattern(class).jpg)
 
 name | descreption
 -----|------------
-Print | Print class(規格Ａ)
-PrintBanner | extends Print(Adapter)
+Print | Print interface(規格Ａ)
+PrintBanner | Print instance, extends Banner(Adapter)
 Banner | Banner class(規格Ｂ)
 
-這個在 golang 實作上基本上跟 Class Adapter 沒差太多
-
-- Print 從 interface 變成 class，然後 `PrintBanner` 繼承 `Print`
-
-- PrintWeek() 這些 method 中改用 PrintBanner 內的 private value(banner.Banner) 去呼叫他的 receiver 做事，而不是像 Class Adapter 是直接使用 super 往上拋，然後再使用他的 method
-
-所以下面就不做 golang 的範例了，可以看看 java 的範例感受一下兩者之間的不同
+golang 沒有繼承，所以這邊就不實作了，直接看看 java code 來感受一下兩者的差別吧
 
 ### 範例二
+
+#### Banner
+
+java:
+
+```java
+public class Banner {
+  private String string
+  public Banner(Strign string) {
+    this.string = string;
+  }
+  public void showWithParen() {
+    System.out.println("(" + string + ")")
+  }
+  public void showWithAster() {
+    System.out.println("*" + string + "*")
+  }
+}
+```
+
 
 #### Print
 
 java:
 
 ```java
-public abstract class Print {
+public abstract interface Print {
   public abstract void printWeek();
   public abstract void printStrong();
 }
@@ -221,16 +231,29 @@ public abstract class Print {
 java:
 
 ```java
-public class PrintBanner extends Print {
-  private Banner banner;
+public class PrintBanner extends Banner implements Print {
   public PrintBanner(String string) {
-    this.banner = new Banner(string)
+    super(string)
   }
   public void printWeek() {
-    banner.showWithParen()
+    showWithParen()
   }
   public void printStrong() {
-    banner.showWithAster()
+    showWithAster()
+  }
+}
+```
+
+#### Main
+
+java:
+
+```java
+public class Main {
+  public static void main(String[] args) {
+    Print p = new PrintBanner("Hello")
+    p.PrintWeek()
+    p.PrintStrong()
   }
 }
 ```
