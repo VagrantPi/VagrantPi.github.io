@@ -273,7 +273,7 @@ public class Main {
     為既有的方法(原本就有的交流電)，在範例中為 Banner struct
     而如果 Adaptee 的方法與 Target 相同(即原本的插孔就是直流電了)，這樣就不需要 Adapter 角色了
 
-- Adapter
+- Adapter
 
     滿足 Target 的需求(讓交流電插座可以被直流電電器所使用)，在範例中為 PrintBanner
 
