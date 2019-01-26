@@ -5,7 +5,8 @@ subtitle: 圖解設計模式讀書筆記 - Iterator Pattern
 description: "Iterator Pattern 筆記，與 golang 的實作"
 author: VagrantPi
 tags: Design_Pattern Note
-imgurl: /public/img/index/gopher.jpg
+imgurl-fb: /public/img/index/gopher-fb.jpg
+imgurl-twitter: /public/img/index/gopher.jpg
 imgalt: gopher 
 ---
 

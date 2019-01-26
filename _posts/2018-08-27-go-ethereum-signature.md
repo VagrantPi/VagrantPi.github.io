@@ -5,7 +5,8 @@ subtitle: go-ethereum Signature
 description: go-ethereum Signature
 author: VagrantPi
 tags: Golang Blockchain
-imgurl: /public/img/index/gopher.jpg
+imgurl-fb: /public/img/index/gopher-fb.jpg
+imgurl-twitter: /public/img/index/gopher.jpg
 imgalt: gopher logo
 ---
 

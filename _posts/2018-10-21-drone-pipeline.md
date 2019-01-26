@@ -5,7 +5,8 @@ subtitle: Drone Pipeline tutorials 1
 description: "Drone Pipeline 簡介，簡單介紹 pipeline 各區塊分別是做什麼的"
 author: VagrantPi
 tags: Docker CI/CD Drone
-imgurl: /public/img/index/drone.jpg
+imgurl-fb: /public/img/index/drone.jpg
+imgurl-twitter: /public/img/index/drone.jpg
 imgalt: Drone logo
 ---
 
