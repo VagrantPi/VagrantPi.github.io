@@ -6,7 +6,7 @@ description: "Iterator Pattern 筆記，與 golang 的實作"
 author: VagrantPi
 tags: Design_Pattern Note
 imgurl-fb: /public/img/index/gopher-fb.jpg
-imgurl-twitter: /public/img/index/gopher.jpg
+imgurl: /public/img/index/gopher.jpg
 imgalt: gopher 
 ---
 

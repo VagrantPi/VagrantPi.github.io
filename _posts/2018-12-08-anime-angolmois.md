@@ -6,7 +6,7 @@ description: "アンゴルモア 元寇合戦記 推坑文"
 author: VagrantPi
 tags: anime 推坑
 imgurl-fb: /public/img/index/angolmois-logo.jpg
-imgurl-twitter: /public/img/index/angolmois-logo.jpg
+imgurl: /public/img/index/angolmois-logo.jpg
 imgalt: アンゴルモア 元寇合戦記 logo
 ---
 

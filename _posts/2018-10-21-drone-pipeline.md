@@ -6,7 +6,7 @@ description: "Drone Pipeline 簡介，簡單介紹 pipeline 各區塊分別是�
 author: VagrantPi
 tags: Docker CI/CD Drone
 imgurl-fb: /public/img/index/drone.jpg
-imgurl-twitter: /public/img/index/drone.jpg
+imgurl: /public/img/index/drone.jpg
 imgalt: Drone logo
 ---
 
