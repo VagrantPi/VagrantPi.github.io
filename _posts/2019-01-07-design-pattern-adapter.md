@@ -5,7 +5,7 @@ subtitle: 圖解設計模式讀書筆記 - Adapter Pattern
 description: "Adapter Pattern 筆記"
 author: VagrantPi
 tags: Design_Pattern Note
-imgurl-fb: /public/img/index/gopher.jpg
+imgurl-fb: /public/img/index/gopher-fb.jpg
 imgurl: /public/img/index/gopher.jpg
 imgalt: gopher 
 ---
@@ -367,4 +367,5 @@ month=1
 ## 系列文章
 
 - [Design Pattern 筆記 - Iterator Pattern]({{ site.url }}/2019/01/01/design-pattern-iterator/)
-- [Design Pattern 筆記 - Adapter Pattern]({{ site.url }}/2019/01/01/design-pattern-adapter/)
+- [Design Pattern 筆記 - Adapter Pattern]({{ site.url }}/2019/01/07/design-pattern-adapter/)
+- [Design Pattern 筆記 - Template Pattern]({{ site.url }}/2019/01/28/design-pattern-template/)

@@ -421,4 +421,5 @@ func (b *BookShelf) Iterator() Iterator {
 ## 系列文章
 
 - [Design Pattern 筆記 - Iterator Pattern]({{ site.url }}/2019/01/01/design-pattern-iterator/)
-- [Design Pattern 筆記 - Adapter Pattern]({{ site.url }}/2019/01/01/design-pattern-adapter/)
+- [Design Pattern 筆記 - Adapter Pattern]({{ site.url }}/2019/01/07/design-pattern-adapter/)
+- [Design Pattern 筆記 - Template Pattern]({{ site.url }}/2019/01/28/design-pattern-template/)
