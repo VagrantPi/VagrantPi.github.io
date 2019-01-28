@@ -12,9 +12,9 @@ imgalt: gopher
 
 ## 前言
 
-每次發文都還是都能被找到 Σ(ﾟДﾟ；≡；ﾟдﾟ)
+每次發文都還是都能被找到錯誤 Σ(ﾟДﾟ；≡；ﾟдﾟ)
 
-如果跟我依樣是新米 Gopher 可以等文章發完過幾天再上來看看(囧
+如果跟我一樣是新米 Gopher 可以等文章發完過幾天再上來看，說不定又會有熱心的大大幫忙 review 了 ORZ
 
 很感謝 Golang Taiwan 板上的大大不吝指教，每次討論與指正都讓我學到了一些東西
 
@@ -28,11 +28,11 @@ Template 就如下面這種工具
 
 雖然我們可以從鏤空的洞看出能寫出什麼文字，但具體字出來會長怎樣還是依賴於所用的筆(e.g. 彩色、鉛筆色、墨水色)，但無論使用哪種筆，最後產出的文字都是一樣的
 
-下面範例因為 golang 沒有 class 與繼承，所以實作上差很多(說不定是我寫錯了 XD)，所以會先上個 Java code，配合著 Class Diagram 感受一下，之後才是 Golang 版本，那就不廢話了直接進 code 吧
+下面範例因為 golang 沒有 class 與繼承，所以實作上差很多(也說不定是我寫錯了 XD)，所以會先上個 Java code，配合著 Class Diagram 感受一下，之後才是 Golang 版本，那就不廢話了直接進 code 吧
 
 ## 範例說明
 
-`AbstractDisplay class` 定義了 display 方法，並在該方法中呼叫 open, print, close 這 3 個方法，不過這 3 個方拉在 `AbstractDisplay class` 中只有選告並未實作(抽象方法)，在這邊呼叫抽象方法的 display 就是模板(template)方法 
+`AbstractDisplay class` 定義了 display 方法，並在該方法中呼叫 open, print, close 這 3 個方法，不過這 3 個方法在 `AbstractDisplay class` 中只有選告並未實作(抽象方法)，在這邊呼叫抽象方法的 display 就是模板(template)方法 
 
 name | description
 -----|--------------
@@ -48,7 +48,7 @@ StringDisplay | 實現了 open, print, close 方法的 class
 
 ### AbstractDisplay
 
-這邊我們定義了模板長怎樣
+這邊我們定義了display(模板)長怎樣、及一些抽象方訪
 
 - 呼叫 open()
 - 呼叫 print() 5 次
@@ -190,7 +190,7 @@ output:
 
 ### AbstractDisplay
 
-在 golang 當中，並沒有 class 與繼承，應此這邊多加了一個 `AbstractDisplayTemplate`，將呼叫抽象方法的 Display 而寫成另一個 interface，並在這邊時做了兩種模版 `AbstractDisplayTemplateStruct1`, `AbstractDisplayTemplateStruct2`
+在 golang 當中，並沒有 class 與繼承，因此我們將呼叫抽象方法的 Display 而寫成另一個 interface `AbstractDisplayTemplate`，並在這邊時做了兩種模版 `AbstractDisplayTemplateStruct1`, `AbstractDisplayTemplateStruct2`
 
 ```go
 type AbstractDisplay interface {
@@ -343,7 +343,7 @@ template 2
 
 ### 使邏輯處理通用化
 
-其優點在於，一樣的方法，不需要不段的實現，用 golang 例子來看，如果 AbstractDisplay interface 多定義了 Display，這樣所有的的實例都需要在多實現 Display，但是這邊範例的需求上所以 display 的行為都是一樣的(所以在父 class 被實現了)
+其優點在於，一樣的方法不需要不段的實現，用 golang 例子來看，如果 AbstractDisplay interface 多定義了 Display 的話，這樣所有的實例都需要在多實現 Display，但是這邊範例的需求上所以 display 的行為都是一樣的(所以在父 class 被實現就好了)
 
 ### 父類與子類的一至性
 
@@ -357,7 +357,7 @@ template 2
 
 ### 子類責任(subclass responsibility)
 
-在我們理解父類子類關係時，同長會站在子類角度進行思考，也就是容易著重於：
+在我們理解父類子類關係時，通常會站在子類角度進行思考，也就是容易著重於：
 
 - **在子類中可以使用父類中定義的方法**
 - **可以通過子類中增加方法來實現新功能**
@@ -384,13 +384,13 @@ template 2
 
 > 文中的 Source Code 都放在 [github](https://github.com/VagrantPi/golang-design-pattern/tree/master/3.template) 了，自己 clone 下來玩玩吧
 
-前幾天 ACE COMBAT 7 終於發售了，還記得 15 年看著 E3 消息說要出續作，真的很爽，我玩的遊戲都很冷門啊 QQ，到了 19 年終於讓我等到了
+前幾天 ACE COMBAT 7 終於發售了，還記得 15 年看著 E3 消息說要出續作，到了 19 年終於讓我等到了，我玩的遊戲都好冷門啊 QQ
 
 這篇多了不少專有名詞的東西，golang 的實作上也花了我比較多時間(((ﾟДﾟ;)))
 
-最近生活就差不多是被 deadline 追著跑(希望過年別被 on call)、還還技術債、玩 ACE COMBAT 7、想到就翻一下 design pattern、~~如果還有空就刷點 LeetCode~~，這樣就佔滿休息時間了
+最近生活就差不多是被 deadline 追著跑(希望過年別被 on call)、還還技術債、玩 ACE COMBAT 7、想到就翻一下 design pattern、~~如果還有空就刷點 LeetCode~~
 
-不過 blog 進度終於補上了，可以放下筆電換拿手把了 ｡:.ﾟヽ(*´∀`)ﾉﾟ.:｡
+好想多點時間打 Game 呀！～
 
 ## 系列文章
 
