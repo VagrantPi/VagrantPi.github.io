@@ -369,3 +369,4 @@ month=1
 - [Design Pattern 筆記 - Iterator Pattern]({{ site.url }}/2019/01/01/design-pattern-iterator/)
 - [Design Pattern 筆記 - Adapter Pattern]({{ site.url }}/2019/01/07/design-pattern-adapter/)
 - [Design Pattern 筆記 - Template Pattern]({{ site.url }}/2019/01/28/design-pattern-template/)
+- [Design Pattern 筆記 - Singleton Pattern]({{ site.url }}/2019/03/03/design-pattern-singleton/)

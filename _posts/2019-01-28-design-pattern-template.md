@@ -62,9 +62,9 @@ public abstract class AbstractDisplay {
   public final void display() {
     open()
     for (int i = 0; i < 5; i++) {
-      print()
+      print();
     }
-    close()
+    close();
   }  
 }
 ```
@@ -77,7 +77,7 @@ name | description
 -----|-------------
 open | 印出 "<<"
 print | 印出建構函式接收到的一個字符
-close | 印出 "<<"
+close | 印出 ">>"
 
 e.g. 當我們使用建構函示塞進 "H" 參數後，display 會印出
 
@@ -397,7 +397,7 @@ template 2
 - [Design Pattern 筆記 - Iterator Pattern]({{ site.url }}/2019/01/01/design-pattern-iterator/)
 - [Design Pattern 筆記 - Adapter Pattern]({{ site.url }}/2019/01/07/design-pattern-adapter/)
 - [Design Pattern 筆記 - Template Pattern]({{ site.url }}/2019/01/28/design-pattern-template/)
-
+- [Design Pattern 筆記 - Singleton Pattern]({{ site.url }}/2019/03/03/design-pattern-singleton/)
 
 
 

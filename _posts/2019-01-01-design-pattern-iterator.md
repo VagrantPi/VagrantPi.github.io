@@ -412,7 +412,7 @@ func (b *BookShelf) Iterator() Iterator {
 
 ## 結語
 
-> 文中的 [Source Code](https://github.com/VagrantPi/golang-design-pattern/tree/master/1.iterator) 都放在 github 了，自己 clone 下來玩玩吧
+> 文中的 [Source Code](https://github.com/VagrantPi/golang-design-pattern/tree/master/5.singleton) 都放在 github 了，自己 clone 下來玩玩吧
 
 小弟新手 gopher，這也是第一次看 design pattern 所以如果有任何錯誤還請幫忙指正
 
@@ -423,3 +423,4 @@ func (b *BookShelf) Iterator() Iterator {
 - [Design Pattern 筆記 - Iterator Pattern]({{ site.url }}/2019/01/01/design-pattern-iterator/)
 - [Design Pattern 筆記 - Adapter Pattern]({{ site.url }}/2019/01/07/design-pattern-adapter/)
 - [Design Pattern 筆記 - Template Pattern]({{ site.url }}/2019/01/28/design-pattern-template/)
+- [Design Pattern 筆記 - Singleton Pattern]({{ site.url }}/2019/03/03/design-pattern-singleton/)
