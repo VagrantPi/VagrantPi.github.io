@@ -157,6 +157,56 @@ End.
 
     在 Singleton Pattern 中只有一個角色，永遠回傳同一個實例
 
+## so why?
+
+聰明的你可能會想那為何需要在 golang 實現 Singleton Pattern，一個 package 的 public 變數不也是 Singleton 了嗎？（FB 社團有人提到），我個人的想法是為了解決 concurrency 問題，不過照原本寫法會是有問題的 (つд⊂)
+
+改寫一下 Singleton：
+
+```go
+package model
+
+import (
+	"fmt"
+	"sync"
+)
+
+type singletonOP interface {
+	Count()
+	Get() int
+}
+
+type singleton struct {
+	count int
+}
+
+func (s *singleton) Count() {
+	s.count++
+}
+
+func (s *singleton) Get() int {
+	return s.count
+}
+
+func (s *singleton) singleton() {
+	fmt.Println("create a instance.")
+}
+
+var instance *singleton
+var once sync.Once
+
+func GetInstance() *singleton {
+	once.Do(func() {
+		instance = &singleton{}
+		instance.singleton()
+	})
+	return instance
+}
+```
+
+> 參考了這篇，裡面還嘴了我第一種寫法 (つд⊂) [link](http://marcio.io/2015/07/singleton-pattern-in-go/?fbclid=IwAR3QjiQdyWcyGm5j2Qft59_rjO9kG3UZGjSts0zKjXiOSU9OP_mvvGhh7as)
+
+
 ## 結語
 
 > 文中的 Source Code 都放在 [github](https://github.com/VagrantPi/golang-design-pattern/tree/master/5.singleton) 了，自己 clone 下來玩玩吧

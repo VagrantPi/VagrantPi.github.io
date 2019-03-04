@@ -17,7 +17,7 @@ title: About
 </div>
 
 - 本網站使用 [Jekyll](https://jekyllrb.com/) + [Hyde](https://github.com/poole/hyde) 建立
-- 並且參考了[Rhadow](https://github.com/Rhadow) 大大的 [Jekyll x Github x Blog](https://rhadow.github.io/2015/02/18/Jekyll-x-Github-x-Blog-Part1/) 系列教學
+- 並且參考了[Rhadow](https://github.com/Rhadow) 大大的 [Jekyll x Github x Blog](https://rhadow.github.io/tags/Jekyll/) 系列教學
 
 
 
