@@ -109,7 +109,7 @@ const worker = require('worker_threads');
 
 不過 node.js 在 v10.5.0 版本後加入了該模組，不過處於實驗性質，所以在下 command 時，需加上 `--experimental-worker` 參數
 
-原本的多個 Node.js instances 寶在同一個 process。而在使用 Worker threads 時，Node.js 會建立新的 threads 並將 Node.js instances 跑在裡面
+原本的多個 Node.js instances 跑在同一個 process。而在使用 Worker threads 時，Node.js 會建立新的 threads 並將 Node.js instances 跑在裡面
 
 接下來來看看 Worker Threads 有哪些特別的東西：
 
