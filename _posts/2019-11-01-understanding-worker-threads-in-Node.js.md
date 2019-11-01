@@ -196,7 +196,7 @@ if (isMainThread) {
 
 可以在 [這裡](https://github.com/nodejs/worker/issues/6) 看到 Workers 相關的 feedback(目前還屬於實驗性質)
 
-如果你需要在 Node.js 處理大煉的運算，目前還不建議 production 中
+如果你需要在 Node.js 處理大量的運算，目前還不建議 production 中
 
 
 
