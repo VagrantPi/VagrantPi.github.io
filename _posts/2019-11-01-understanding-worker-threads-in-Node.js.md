@@ -107,7 +107,7 @@ Worker threads have:
 const worker = require('worker_threads');
 ```
 
-不過 node.js 在 v10.5.0 版本後加入了該模組，不過處於實驗性質，所以在下 command 時，需加上 `--experimental-worker` 參數
+不過 node.js 在 v10.5.0 版本後加入了該模組，不過處於實驗性質，所以在下 command 時，需加上 `--experimental-worker` 參數(新版本已經支援了，可以看下面的補充)
 
 原本的多個 Node.js instances 跑在同一個 process。而在使用 Worker threads 時，Node.js 會建立新的 threads 並將 Node.js instances 跑在裡面
 
@@ -198,5 +198,11 @@ if (isMainThread) {
 
 如果你需要在 Node.js 處理大量的運算，目前還不建議 production 中
 
+## 更新
 
+根據 FB Backend 社團大大提供的消息
+
+work_thread 已經 LTS v12.13.0 後的版本支援了，不再是實驗性功能，所以下 command 時不需要加上 `--experimental-worker`
+
+![](/public/img/post/nodejs/work_thread_support.jpg)
 
