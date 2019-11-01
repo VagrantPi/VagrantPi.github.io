@@ -116,7 +116,7 @@ const worker = require('worker_threads');
 - `ArrayBuffers` 可以在 threads 間傳遞記憶體空間
 - `SharedArrayBuffer` 可以無障礙的在 threads 間分享記憶體(只能是 binary data)
 - `Atomics` 允許你在多線程中安全的使用變數
-- `MessagePort` asynchronous 的通訓端，用於不同 threads 間傳遞的資料用
+- `MessagePort` asynchronous 的通訊端，用於不同 threads 間傳遞的資料用
 - `MessageChannel` 可以在兩個 threads 間 asynchronous 的傳遞資料
 - `WorkerData` 傳遞的資料型態，為任意 Javascript 資料型態
 
