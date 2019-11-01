@@ -57,7 +57,7 @@ imgalt: nodejs
 
 > 黃金法則：不要阻塞(block) event loop，避免任何可能 blocking 的事件，如 synchronous 網路或呼叫無窮迴圈
 
-區分 CPU 操作與 I/O (input/output) 操作是重要的，只有 I/O 超作能併行(parallel)執行，但還記得我們前面說的 Node.js 不能併行(parallel)執行吧
+區分 CPU 操作與 I/O (input/output) 操作是重要的，只有 I/O 操作能併行(parallel)執行，但還記得我們前面說的 Node.js 不能併行(parallel)執行吧
 
 所以 Worker Threads 來處理大量的 I/O 處理效益不高，Worker Threads 的目標是為了提高 CPU 的操作效能
 
@@ -77,7 +77,7 @@ imgalt: nodejs
 
 `var x = 0.1 + 0.2; // x will be 0.30000000000000004`
 
-浮點數運算不是很準確，有可能使用 Worker 改動到某個小數，而導致輸出不一緻
+浮點數運算不是很準確，有可能使用 Worker 改動到某個小數，而導致輸出不一致
 
 ## The best solution:
 
@@ -178,7 +178,7 @@ if (isMainThread) {
 - `isMainThread` 當 code run 在 Worker thread 時為 true
 - `parentPort` MessagePort 可以與 parent thread 進行溝通(由 Worker 產生的新 thread)
 
-在實務上，請使用 pool of Workers instead，不然建立 Workers 的開消可能超出其收益
+在實務上，請使用 pool of Workers instead，不然建立 Workers 的開銷可能超出其收益
 
 ## What is expected for Workers (hopefully)
 
