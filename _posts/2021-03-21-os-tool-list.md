@@ -5,8 +5,8 @@ subtitle: 開發環境預裝工具
 description: "開發環境預裝工具"
 author: VagrantPi
 tags: Note
-imgurl-fb: /apple-touch-icon-144-precomposed.png
-imgurl: /apple-touch-icon-144-precomposed.png
+imgurl-fb: /public/apple-touch-icon-144-precomposed.png
+imgurl: /public/apple-touch-icon-144-precomposed.png
 imgalt: VagrantPi 
 ---
 
@@ -15,22 +15,6 @@ imgalt: VagrantPi
 最近將筆電灌成了 Ubuntu，突然熟悉的指令或是工具都需要重新安裝，然後各類設定檔散落於各處，或是有些裝過已經忘記叫什麼了，所以乾脆就寫個清單紀錄一下常用工具的清單與安裝流程，方便未來複製貼上
 
 不定期更新 \_(:3 」∠ )\_
-
-## Tool List
-
-- terminal 相關
-  - powerline
-  - .vimrc & Vundle
-- 程式語言
-  - nodejs
-  - golang
-- 各類 service & 其他
-  - sshd
-  - docker
-  - mount disk from windows(ntfs)
-  - SWAP
-- 常用軟體
-  - Typora
 
 ## terminal 相關
 
