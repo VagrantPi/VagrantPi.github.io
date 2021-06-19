@@ -32,11 +32,10 @@ github:
   repo:           https://github.com/poole/hyde
 
   logo:           /public/favicon.ico
-# Gems
-gems:             
+
+plugins:
   - jekyll-paginate
   - jekyll-seo-tag
-
 
 social:
   links:

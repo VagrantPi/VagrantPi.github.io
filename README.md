@@ -6,6 +6,19 @@ Blog 使用 [hyde](https://github.com/poole/hyde) 建置
 
 Website: https://vagrantpi.github.io/
 
+## install dependency
+
+```
+gem install bundler
+bundle install
+```
+
+## build
+
+```
+$ jekyll build
+```
+
 ## serve in local
 
 ```
