@@ -36,6 +36,7 @@ github:
 plugins:
   - jekyll-paginate
   - jekyll-seo-tag
+  - jekyll-twitter-plugin
 
 social:
   links:
