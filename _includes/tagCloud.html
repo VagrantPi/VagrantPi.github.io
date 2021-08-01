@@ -1,14 +1,27 @@
 <link rel="stylesheet" type="text/css" href="{{ site.url }}/public/css/jqcloud/jqcloud.css" />
+<style>
+  div.jqcloud {
+    font-size: 15px;
+  }
+  div.jqcloud span {
+    font-weight: bold;
+  }
+</style>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js"></script>
 <script type="text/javascript" src="{{ site.url }}/public/lib/jqcloud/jqcloud-1.0.4.js"></script>
 <script type="text/javascript">
   var word_list = [
     {% for tag in site.tags %}
-      { text: "{{ tag | first }}", weight: {{ tag | last | size }}, link: "/tags/{{ tag[0] }}" },
+        { text: "{{ tag | first }}", weight: {{ tag | last | size }}, link: "/tags/{{ tag[0] }}" },
     {% endfor %}
   ];
+  console.log(word_list);
+  
   $(function () {
-    $("#my_favorite_latin_words").jQCloud(word_list);
+    $("#my_favorite_latin_words").jQCloud(word_list, {
+      width: 650,
+      height: 300
+    });
   });
 </script>
 <div id="my_favorite_latin_words" style="width: 550px; height: 350px; border: 1px solid #ccc;"></div>
