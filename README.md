@@ -16,7 +16,7 @@ bundle install
 ## build
 
 ```
-$ jekyll build
+$ sh build.sh
 ```
 
 ## serve in local
