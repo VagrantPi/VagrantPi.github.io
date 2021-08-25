@@ -353,7 +353,7 @@ Successfully verified 1 contract(s).
 git clone https://github.com/alchemyplatform/hello-world-part-four-tutorial
 ```
 
-#### 使用合約 ABI
+### 使用合約 ABI
 
 這邊使用到 @alch/alchemy-web3 來連接 ETH，然後改用 Websocket 接口，REACT_APP_ALCHEMY_KEY
 
@@ -385,7 +385,7 @@ export const helloWorldContract = new web3.eth.Contract(
 );
 ```
 
-#### 合約事件監聽
+### 合約事件監聽
 
 當初合約有定義 Event `UpdatedMessages`
 
@@ -415,7 +415,7 @@ function addSmartContractListener() {
 
 ![](/public/img/post/smart-contract/dapp01.png)
 
-#### Connect Metamask to your UI
+### Connect Metamask to your UI
 
 `interact.js`
 
@@ -473,7 +473,7 @@ const connectWalletPressed = async () => {
 };
 ```
 
-##### 新增 getCurrentWalletConnected function 在 initial 時先檢查是否連接過了
+#### 新增 getCurrentWalletConnected function 在 initial 時先檢查是否連接過了
 
 `interact.js`
 
@@ -536,7 +536,7 @@ useEffect(async () => {
 }, []);
 ```
 
-##### 新增 addWalletListener 來 listener 錢包 Account 切換
+### 新增 addWalletListener 來 listener 錢包 Account 切換
 
 `HelloWorld.js`
 
@@ -583,14 +583,14 @@ useEffect(async () => {
 }, []);
 ```
 
-##### 最後串接合約 updateMessage
+### 最後串接合約 updateMessage
 
 錢包連線搞定後剩下呼叫合約的 updateMessage 需要實做，流程為：
 
 1. 確定要發布的 message 為合法的值
 2. 使用 Metamask 對合約超操作的交易簽名
 
-###### Step 1. validate message
+#### Step 1. validate message
 
 `interact.js`
 
@@ -611,7 +611,7 @@ export const updateMessage = async (address, message) => {
   ....
 ```
 
-###### Step 2. Signing our transaction
+#### Step 2. Signing our transaction
 
 `interact.js`
 
