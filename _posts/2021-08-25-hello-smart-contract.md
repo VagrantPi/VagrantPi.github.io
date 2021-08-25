@@ -2,7 +2,7 @@
 layout: post
 title: "Hello Smart Contract"
 subtitle: "Hello Smart Contract"
-description: "自動爬 iT 邦幫忙鐵人賽系列文章，加進 Pocket 的小專案"
+description: "Ethereum Smart Contract 初體驗"
 author: VagrantPi
 tags: Note Ethereum Blockchain
 imgurl-fb: /public/img/index/smart-contract.png
