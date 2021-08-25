@@ -22,7 +22,7 @@ imgalt: smart-contract
 
 詳細範例可以參考: [https://github.com/VagrantPi/hello-smart-contract](https://github.com/VagrantPi/hello-smart-contract)
 
-## 建立合約
+## 🌎 建立合約
 
 > Source: [🌎 Hello World Smart Contract](https://docs.alchemy.com/alchemy/tutorials/hello-world-smart-contract)
 
@@ -77,13 +77,14 @@ contract HelloWorld {
 
 合約部屬後可以在 etherscan 上看到合約 EX:
 
-https://ropsten.etherscan.io/address/0x84f6b7146f3e030cdd3555d387b6c47ef9b85e46
+[https://ropsten.etherscan.io/address/0x84f6b7146f3e030cdd3555d387b6c47ef9b85e46](https://ropsten.etherscan.io/address/0x84f6b7146f3e030cdd3555d387b6c47ef9b85e46)
 
 ![](https://i.imgur.com/faeBy9X.png)
 
 #### Hardhat
 
-> https://hardhat.org/getting-started/#overview
+> [https://hardhat.org/getting-started/#overview](https://hardhat.org/getting-started/#overview)
+>
 > Ethereum 環境建制工具，用於編譯、部屬、debug，可以快速在環境測試部屬 smart contract 或 dApps
 
 ##### folders
@@ -199,7 +200,9 @@ truffle migrate
 ![](/public/img/post/smart-contract/ganache02.png)
 
 
-## 合約互動
+## 💻 合約互動
+
+> Source:[💻 Interacting with a Smart Contract](https://docs.alchemy.com/alchemy/tutorials/hello-world-smart-contract/interacting-with-a-smart-contract)
 
 ### 使用 Etherscan 簡單與合約互動
 
@@ -297,12 +300,12 @@ The message is: Hello world!
 The message is: Hello Drupe!
 ```
 
-## 在 Etherscan 上驗證智能合約
+## 📩 在 Etherscan 上驗證智能合約
 
 > Source: [📩 Submitting your Smart Contract to Etherscan](https://docs.alchemy.com/alchemy/tutorials/hello-world-smart-contract/submitting-your-smart-contract-to-etherscan)
 
 
-https://ropsten.etherscan.io/address/0x051870a19066b55Dacebc72394006Ce7F16a81aa#code
+[https://ropsten.etherscan.io/address/0x051870a19066b55Dacebc72394006Ce7F16a81aa#code](https://ropsten.etherscan.io/address/0x051870a19066b55Dacebc72394006Ce7F16a81aa#code)
 
 ![](/public/img/post/smart-contract/etherscan05.png)
 
@@ -340,7 +343,11 @@ Successfully verified 1 contract(s).
 
 詳細設定參考該篇教學即可
 
-### 整合前端
+## 📱整合前端
+
+> [📱Integrating Your Smart Contract with the Frontend](https://docs.alchemy.com/alchemy/tutorials/hello-world-smart-contract/part-4)
+
+文中使用到的範例
 
 ```
 git clone https://github.com/alchemyplatform/hello-world-part-four-tutorial
