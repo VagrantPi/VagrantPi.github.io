@@ -12,7 +12,7 @@ imgalt: mysql
 
 ## 前言
 
-![eventbanner](https://static.accupass.com/eventbanner/2102230719107391064490.jpg)
+![eventbanner](/public/img/post/why-is-my-query-so-slow-in-mysql/2102230719107391064490.png)
 
 久違的參加活動，寫個筆記
 
@@ -38,7 +38,7 @@ query > DB schema > hardware configuration > Mysql configuration > heigh currenc
 
 不必要的資料長度 ex: `name varchar(255)`
 
-![](https://i.imgur.com/td08dyw.png)
+![](/public/img/post/why-is-my-query-so-slow-in-mysql/td08dyw.png)
 
 table 規劃越小越好（依要實作的功能最好作好正規化
 
@@ -75,7 +75,7 @@ cardinality 值越高代表獨特性越高，時會早較高的
 
 > http://blog.twbryce.com/mysql-explain/
 > 
-> ![](https://i.imgur.com/MLcCY64.png)
+> ![](/public/img/post/why-is-my-query-so-slow-in-mysql/MLcCY64.png)
 > * type：顯示使用了何種類型。從最優至最差的類型為const、eq_reg、ref、range、indexhe、ALL。
 > * possible_keys：顯示可能使用到的索引。此為從WHERE語法中選擇一個適合的欄位名稱。
 > * key：實際使用到的索引。如果為NULL，則是沒有使用索引。

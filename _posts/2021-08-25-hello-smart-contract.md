@@ -79,7 +79,7 @@ contract HelloWorld {
 
 [https://ropsten.etherscan.io/address/0x84f6b7146f3e030cdd3555d387b6c47ef9b85e46](https://ropsten.etherscan.io/address/0x84f6b7146f3e030cdd3555d387b6c47ef9b85e46)
 
-![](https://i.imgur.com/faeBy9X.png)
+![](/public/img/post/smart-contract/faeBy9X.png)
 
 #### Hardhat
 

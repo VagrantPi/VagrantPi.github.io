@@ -204,5 +204,4 @@ if (isMainThread) {
 
 work_thread 已經 LTS v12.13.0 後的版本支援了，不再是實驗性功能，所以下 command 時不需要加上 `--experimental-worker`
 
-![](/public/img/post/nodejs/work_thread_support.jpg)
 
