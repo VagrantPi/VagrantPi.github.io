@@ -165,7 +165,7 @@ curl --location --request POST 'https://getpocket.com/v3/send' \
 
 ![](/public/img/post/ithone-pocket/screen.png)
 
-![](/public/img/post/ithone-pocket/kobo.png)
+![](/public/img/post/ithone-pocket/kobo.jpg)
 
 
 最近待業中，為了找工作要刷題，不過一整個沒有幹勁
