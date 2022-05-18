@@ -8,10 +8,9 @@ title: About
   <img data-no-retina="true" class="avatar" src="https://res.cloudinary.com/cakeresume/image/upload/v1494230950/ifkjm068hoiovu9onb5q.png" alt="myPicture.jpg">
 <br>
 <p class="message">
-  Hi 我是VagrantPi，平常喜歡接觸各式各樣的東西，是位艦隊豚、IDOLM廚、偶爾會到幻想鄉泡泡茶，喜歡的音樂有 Metal 樂、古典、民謠、OST 等。
-</p>
-<p class="message">
-  對於潮潮的技術都很有興趣，所以特愛前端(?)，自稱二次元觀測員、Full Stack Developer(邁進中)，常出沒在各社群跟年會，有興趣可以交流交流~
+  Hi 我是VagrantPi，是個喜歡在工作時聽些 Metal 樂、民謠、遊戲 OST。<br>
+  ✦  對於潮潮的技術都很有興趣，目前是位剛從 EVM 生態系轉至波卡生態系的 Gopher，相信著區塊鏈能改變世界而持續耕耘著<br>
+  ✦  有時會出沒在各社群跟年會，有興趣可以交流交流~
 </p>
 
 </div>
