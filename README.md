@@ -22,8 +22,8 @@ $ sh build.sh
 ## serve in local
 
 ```
-$ jekyll serve
+$ jekyll serve -H 0.0.0.0
 Auto-regeneration: enabled for '/VagrantPi.github.io'
-   Server address: http://127.0.0.1:4000/
+   Server address: http://0.0.0.0:4000/
  Server running... press ctrl-c to stop.
 ```

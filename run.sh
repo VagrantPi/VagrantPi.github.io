@@ -1,0 +1,1 @@
+docker run -ti -d -v /Users/kais/WS/mine/VagrantPi.github.io:/tmp -p 4000:4000 vagrantpi/jekyll-builder:latest

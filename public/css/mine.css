@@ -43,6 +43,7 @@
   box-shadow: 10px 11px 13px 0px grey;
   max-height: 150px;
   max-width: 150px;
+  padding: 10px;
 }
 #error-text {
 	color: rgba(0,0,0,0.4);
