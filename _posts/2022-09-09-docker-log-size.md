@@ -69,6 +69,7 @@ json-file | The logs are formatted as JSON. The `default` logging driver for Doc
 
 Option | Description | Example value
 max-size | The maximum size of the log before it is rolled. A positive integer plus a modifier representing the unit of measure (k, m, or g). `Defaults` to -1 (`unlimited`). | --log-opt max-size=10m
+max-file | The maximum number of log files that can be present. If rolling the logs creates excess files, the oldest file is removed. Only effective when max-size is also set. A positive integer. Defaults to 1. | --log-opt max-file=3
 
 好的，所以很明顯看到問題點了
 
@@ -137,6 +138,15 @@ done
 ![](/public/img/post/docker-log-size/3.jpg)
 
 OK，搞定
+
+另外如果使用 docker compose 的話可以在 services 那一層加上
+
+```yaml
+    logging:
+      options:
+        max-size: "500m"
+        max-file: "3"
+```
 
 ## 結語
 
