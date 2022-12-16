@@ -16,6 +16,10 @@
     {% endfor %}
   ];
   console.log(word_list);
+
+  word_list = word_list.filter(function(v, _, _){ 
+      return v.text != "Note";
+  });
   
   $(function () {
     $("#my_favorite_latin_words").jQCloud(word_list, {
