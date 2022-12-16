@@ -27,3 +27,12 @@ Auto-regeneration: enabled for '/VagrantPi.github.io'
    Server address: http://0.0.0.0:4000/
  Server running... press ctrl-c to stop.
 ```
+
+## build 時可能遇到的問題
+
+```
+You have already activated public_suffix 5.0.1, but your Gemfile requires public_suffix 5.0.0. Prepending `bundle exec` to your command may solve this.
+
+可以使用
+bundle clean --force
+```
