@@ -36,3 +36,31 @@ You have already activated public_suffix 5.0.1, but your Gemfile requires public
 可以使用
 bundle clean --force
 ```
+
+## 使用 docker 環境
+
+### 開發 
+
+```
+docker run --rm \
+  -v "$PWD:/srv/jekyll:Z" \
+  -p 4000:4000 \
+  jekyll/jekyll \
+  jekyll serve
+```
+
+### 編譯
+
+<!-- 
+記錄一下，container 內印出的版本
+ruby 3.1.1p18 (2022-02-18 revision 53f5fc4236) [x86_64-linux-musl]
+jekyll 4.3.2
+-->
+
+```
+docker run --rm \
+  -v "$PWD:/srv/jekyll:Z" \
+  -p 4000:4000 \
+  jekyll/jekyll \
+  jekyll build
+```
