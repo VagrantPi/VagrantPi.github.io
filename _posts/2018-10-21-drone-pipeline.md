@@ -123,7 +123,7 @@ clone:
 
 預設 drone 是不會接收 tage 這個 event 的，所以假設你希望再有打版號的情況下才觸發該 pipeline step，這邊就需要補上 `tags: true`，或者是在 web ui 的該專案的 `Settings` 內打開它
 
-![drone web ui settings](https://i.imgur.com/4XEdWxe.png)
+![drone web ui settings](/public/img/post/drone/7.jpg)
 
 ## Service
 
@@ -202,7 +202,7 @@ codecov:
 - 當 pipeline 執行 success 或 failure 時就通知 slack 中的 drone_test channel
 - 將測試涵蓋率的檔案丟到 codecov 的服務中，然後就會在該 pr 中的 Comments 產生漂亮的測試涵蓋率比例圖(下圖)
 
-![codecov Bitbucket Comments](https://i.imgur.com/dc8BJcQ.png)
+![codecov Bitbucket Comments](/public/img/post/drone/8.jpg)
 
 還沒研究 plugin 怎麼寫，不過看起來就只是將你要的功能包成 docker image 而已   \_(:3 」∠ )\_
 

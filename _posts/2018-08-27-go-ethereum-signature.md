@@ -51,7 +51,7 @@ v := int(sig[64]) + 27
 msgHashStr := fmt.Sprintf("%x", msgHash)
 ```
 
-![](https://i.imgur.com/RjvZ30H.jpg)
+![](/public/img/post/cryptography/1.jpg)
 
 驗簽：
 
@@ -104,7 +104,7 @@ func SignatureIdentify(sigR, sigS, uAddr string, sigV int, rmsgh string) bool {
 }
 ```
 
-![](https://i.imgur.com/9YA4zBd.jpg)
+![](/public/img/post/cryptography/2.jpg)
 
 ## 結語
 
