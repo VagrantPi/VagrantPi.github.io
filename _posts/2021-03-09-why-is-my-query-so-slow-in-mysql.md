@@ -4,7 +4,7 @@ title: "Why is my query so slow in MySQL? 活動筆記"
 subtitle: Why is my query so slow in MySQL? 活動筆記
 description: "Why is my query so slow in MySQL? 活動筆記"
 author: VagrantPi
-tags: Note DB
+tags: EventNote DB
 imgurl-fb: /public/img/index/mysql.png
 imgurl: /public/img/index/mysql.png
 imgalt: mysql 
