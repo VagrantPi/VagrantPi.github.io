@@ -583,7 +583,7 @@ https://apidock.com/rails/Array/forty_two
 
 `[1,2,3,4].forty_two`
 
-## 這個特性很有趣，且可以讓程式碼可讀性高出很多
+## 這個特性很有趣
 
 舉裡: 我現在要取前一天的
 
