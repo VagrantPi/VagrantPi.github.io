@@ -60,7 +60,6 @@ jekyll 4.3.2
 ```
 docker run --rm \
   -v "$PWD:/srv/jekyll:Z" \
-  -p 4000:4000 \
   jekyll/jekyll \
   jekyll build
 ```
