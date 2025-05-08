@@ -23,6 +23,9 @@ tagline: "JavaScript, Front-End, Back-End, Full Stack, Linux, 筆記, 生活札�
 description: "生活札記，記錄些學習筆記和生活"
 baseurl: /
 
+site:
+  url: https://vagrantpi.github.io
+
 author:
   name: VagrantPi
   url: https://vagrantpi.github.io/about/
