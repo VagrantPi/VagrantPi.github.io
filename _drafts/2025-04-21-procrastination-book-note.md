@@ -6,6 +6,7 @@ author: VagrantPi
 tags: BookNote 自我提升
 imgurl-fb: /public/img/index/procrastination-book.jpg
 imgurl: /public/img/index/procrastination-book.jpg
+image: /public/img/index/procrastination-book.jpg
 imgalt: procrastination-book
 ---
 

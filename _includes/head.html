@@ -33,7 +33,16 @@
 
   <link rel="contents" title="History" href="/History">
   <link rel="start" title="VagarntPi Blog" href="/">
+  {% seo %}
 
+  <script type="application/ld+json">
+  {
+    "author": {
+      "@type": "Person",
+      "url": "{{ page.author.url | default: 'https://vagrantpi.github.io/about/' }}"
+    }
+  }
+  </script>
 
   <!-- CSS -->
   <link rel="stylesheet" href="{{ site.url }}/public/css/poole.css">
@@ -66,5 +75,4 @@
 
     gtag('config', 'G-37HKN5XMR9');
   </script>
-  {% seo %}
 </head>

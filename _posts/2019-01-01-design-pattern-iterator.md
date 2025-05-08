@@ -7,6 +7,7 @@ author: VagrantPi
 tags: Design_Pattern Golang
 imgurl-fb: /public/img/index/gopher-fb.jpg
 imgurl: /public/img/index/gopher.jpg
+image: /public/img/index/gopher.jpg
 imgalt: gopher 
 ---
 

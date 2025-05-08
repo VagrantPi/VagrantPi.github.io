@@ -7,6 +7,7 @@ author: VagrantPi
 tags: Docker Prometheus Grafana
 imgurl-fb: /public/img/index/docker.jpg
 imgurl: /public/img/index/docker.jpg
+image: /public/img/index/docker.jpg
 imgalt: docker-icon
 ---
 

@@ -7,6 +7,7 @@ author: VagrantPi
 tags: Crawler Pocket
 imgurl-fb: /public/img/index/pocket.png
 imgurl: /public/img/index/pocket.png
+image: /public/img/index/pocket.png
 imgalt: pocket 
 ---
 

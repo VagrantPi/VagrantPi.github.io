@@ -7,6 +7,7 @@ author: VagrantPi
 tags: Node.js JavaScript
 imgurl-fb: /public/img/index/nodejs.jpg
 imgurl: /public/img/index/nodejs.jpg
+image: /public/img/index/nodejs.jpg
 imgalt: nodejs 
 ---
 

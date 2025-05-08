@@ -36,6 +36,15 @@ Auto-regeneration: enabled for '/VagrantPi.github.io'
  Server running... press ctrl-c to stop.
 ```
 
+## serve in local - with draft
+
+```
+$ jekyll serve -H 0.0.0.0 --drafts
+Auto-regeneration: enabled for '/VagrantPi.github.io'
+   Server address: http://0.0.0.0:4000/
+ Server running... press ctrl-c to stop.
+```
+
 ## build 時可能遇到的問題
 
 ```

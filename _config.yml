@@ -23,8 +23,9 @@ tagline: "JavaScript, Front-End, Back-End, Full Stack, Linux, 筆記, 生活札�
 description: "生活札記，記錄些學習筆記和生活"
 baseurl: /
 
-author: VagarntPi
-url: https://vagrantpi.github.io
+author:
+  name: VagrantPi
+  url: https://vagrantpi.github.io/about/
 
 paginate: 8
 
@@ -49,3 +50,10 @@ social:
     - https://github.com/VagrantPi
     - https://twitter.com/VagrantPi
     - https://www.facebook.com/VagrantPi
+
+# SEO
+jekyll-seo-tag:
+  default:
+    name: "VagrantPi Blog"
+    description: "生活札記，記錄些學習筆記和生活"
+    image: "/public/apple-touch-icon-144-precomposed.png"

@@ -7,6 +7,7 @@ author: VagrantPi
 tags: Other
 imgurl-fb: /public/apple-touch-icon-144-precomposed.png
 imgurl: /public/apple-touch-icon-144-precomposed.png
+image: /public/apple-touch-icon-144-precomposed.png
 imgalt: VagrantPi 
 ---
 

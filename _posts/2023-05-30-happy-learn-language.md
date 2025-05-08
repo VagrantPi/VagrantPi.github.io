@@ -7,6 +7,7 @@ author: VagrantPi
 tags: EventNote Ruby
 imgurl-fb: /public/img/index/ruby.jpg
 imgurl: /public/img/index/ruby.jpg
+image: /public/img/index/ruby.jpg
 imgalt: ruby 
 ---
 

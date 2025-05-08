@@ -7,7 +7,8 @@ author: VagrantPi
 tags: anime
 imgurl-fb: /public/img/index/angolmois-logo.jpg
 imgurl: /public/img/index/angolmois-logo.jpg
-imgalt: アンゴルモア 元寇合戦記 logo
+image: /public/img/index/angolmois-logo.jpg
+imgalt: angolmois-logo
 ---
 
 ## 前言

@@ -7,6 +7,7 @@ author: VagrantPi
 tags: Prometheus Grafana
 imgurl-fb: /public/img/index/prometheus-icon.jpg
 imgurl: /public/img/index/prometheus-icon.jpg
+image: /public/img/index/prometheus-icon.jpg
 imgalt: prometheus-icon
 ---
 

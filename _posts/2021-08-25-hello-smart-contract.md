@@ -7,6 +7,7 @@ author: VagrantPi
 tags: Ethereum Blockchain
 imgurl-fb: /public/img/index/smart-contract.png
 imgurl: /public/img/index/smart-contract.png
+image: /public/img/index/smart-contract.png
 imgalt: smart-contract 
 ---
 

@@ -7,6 +7,7 @@ author: VagrantPi
 tags: EventNote DB
 imgurl-fb: /public/img/index/mysql.png
 imgurl: /public/img/index/mysql.png
+image: /public/img/index/mysql.png
 imgalt: mysql 
 ---
 

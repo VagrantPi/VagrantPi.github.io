@@ -7,6 +7,7 @@ author: VagrantPi
 tags: EventNote 創業
 imgurl-fb: /public/img/index/fuckup-night-50-icon.png
 imgurl: /public/img/index/fuckup-night-50-icon.png
+image: /public/img/index/fuckup-night-50-icon.png
 imgalt: fuckup-night-50-icon 
 ---
 
