@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Design Pattern 筆記 - Adapter Pattern"
-subtitle: 圖解設計模式讀書筆記 - Adapter Pattern
-description: "Adapter Pattern 筆記"
+subtitle: "圖解設計模式 - Adapter Pattern筆記，Golang 實作 Detail，Go 語言學習筆記"
+description: "Adapter Pattern 是一種常見的設計模式，用於將不相容的物件進行轉換，使得多個物件能夠進行交互，如何在 Golang 中實現 Adapter Pattern？本篇文章將詳細介紹 Adapter Pattern 的概念、優點和 Golang 實作 Detail，幫助你更好地理解和應用這個設計模式。"
 author: VagrantPi
 tags: Design_Pattern Golang
 imgurl-fb: /public/img/index/gopher-fb.jpg

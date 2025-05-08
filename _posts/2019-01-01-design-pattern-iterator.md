@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Design Pattern 筆記 - Iterator Pattern"
-subtitle: 圖解設計模式讀書筆記 - Iterator Pattern
-description: "Iterator Pattern 筆記，與 golang 的實作"
+subtitle: "圖解設計模式 - Iterator Pattern筆記，Golang 實作 Detail，Go 語言學習筆記"
+description: "Iterator Pattern 是一種常見的設計模式，用於遍歷容器元素，如何在 Golang 中實現 Iterator Pattern？本篇文章將詳細介紹 Iterator Pattern 的概念、優點和 Golang 實作 Detail，幫助你更好地理解和應用這個設計模式。"
 author: VagrantPi
 tags: Design_Pattern Golang
 imgurl-fb: /public/img/index/gopher-fb.jpg

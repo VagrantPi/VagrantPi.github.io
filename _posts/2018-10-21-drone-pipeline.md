@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Drone - Drone Pipeline 簡介"
-subtitle: Drone Pipeline tutorials 1
-description: "Drone Pipeline 簡介，簡單介紹 pipeline 各區塊分別是做什麼的"
+subtitle: "Drone Pipeline 簡介 - Drone CI/CD Pipeline 的基本概念、 Drone Pipeline 的作用、 Drone Pipeline 的優點"
+description: "Drone Pipeline 是 Drone CI/CD 的核心，Drone Pipeline 簡介文章中，我們將簡單介紹 Drone Pipeline 的基本概念、 Drone Pipeline 的作用和優點，幫助您更好地理解 Drone CI/CD Pipeline"
 author: VagrantPi
 tags: Docker CI/CD Drone
 imgurl-fb: /public/img/index/drone.jpg

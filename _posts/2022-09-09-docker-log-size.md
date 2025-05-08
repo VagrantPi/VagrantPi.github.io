@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Docker 預設 Log 無限增長問題"
-subtitle: "Docker configure logging drivers"
-description: "系統硬碟異常增加，今過排查後發現的一些問題紀錄"
+subtitle: "Docker 預設 Log 無限增長問題 - Docker configure logging drivers 解決方案"
+description: "系統硬碟異常增加，排查 Docker Container log file 無限增長的問題，使用 Docker configure logging drivers 來解決"
 author: VagrantPi
 tags: Docker Prometheus Grafana
 imgurl-fb: /public/img/index/docker.jpg

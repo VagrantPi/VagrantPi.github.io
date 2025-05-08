@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Prometheus + Grafana 資料監控告警系統"
-subtitle: "簡易的機器資訊收集告警，還有潮潮的 Dashboard"
-description: "簡易的機器資訊收集告警，還有潮潮的 Dashboard"
+subtitle: "使用 Prometheus 和 Grafana 建立簡易的機器資訊收集告警系統，並且展示潮潮的 Dashboard"
+description: "使用 Prometheus 和 Grafana 建立簡易的機器資訊收集告警系統，並且展示潮潮的 Dashboard，幫助您更好地監控和管理機器"
 author: VagrantPi
 tags: Prometheus Grafana
 imgurl-fb: /public/img/index/prometheus-icon.jpg

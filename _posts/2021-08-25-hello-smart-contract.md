@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Hello Smart Contract"
-subtitle: "Hello Smart Contract"
-description: "Ethereum Smart Contract 初體驗"
+subtitle: "以太坊智能合約初體驗教程"
+description: "Ethereum Smart Contract 初體驗教程，教你如何使用 Solidity 語言编寫智能合約，並將其部署到ropsten測試鏈上"
 author: VagrantPi
 tags: Ethereum Blockchain
 imgurl-fb: /public/img/index/smart-contract.png

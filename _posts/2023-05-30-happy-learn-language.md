@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "開開心心學 Ruby 活動筆記"
-subtitle: 開開心心學 Ruby 活動筆記
-description: "開開心心學 Ruby 活動筆記"
+subtitle: "開開心心學 Ruby | Ruby 學習筆記 | VagrantPi's Blog"
+description: "VagrantPi 的開開心心學 Ruby 活動筆記，幫助您快速學習 Ruby 的基礎知識，包含 Ruby 的基本語法、物件導向程式設計、常見的 Ruby 庫等"
 author: VagrantPi
 tags: EventNote Ruby
 imgurl-fb: /public/img/index/ruby.jpg

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "iT 邦幫忙鐵人賽爬蟲 x Pocket API"
-subtitle: "Ithelp Ironman Crawler Pocket"
-description: "自動爬 iT 邦幫忙鐵人賽系列文章，加進 Pocket 的小專案"
+subtitle: "使用 Python 3.x爬蟲 iT 邦幫忙鐵人賽系列文章，並將其加進 Pocket 的小專案"
+description: "使用 Python 3.x爬蟲 iT 邦幫忙鐵人賽系列文章，並將其加進 Pocket 的小專案，幫助您更方便地閱讀 iT 邦幫忙鐵人賽文章"
 author: VagrantPi
 tags: Crawler Pocket
 imgurl-fb: /public/img/index/pocket.png

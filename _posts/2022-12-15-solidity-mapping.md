@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Solidity 中的 Mapping"
-subtitle: "Solidity Mapping"
-description: "Solidity 中想同時擁有 Mapping 與 array 的特性"
+subtitle: "Solidity Mapping 使用教程 - Mapping  vs  array"
+description: "Solidity 中 Mapping  vs  array 的差異、使用教程，如何在智能合約中使用 Mapping"
 author: VagrantPi
 tags: Ethereum Blockchain
 imgurl-fb: /public/img/index/ethrttock.jpg

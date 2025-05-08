@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Design Pattern 筆記 - Singleton Pattern"
-subtitle: 圖解設計模式讀書筆記 - Singleton Pattern
-description: "Singleton Pattern 筆記"
+subtitle: "Golang 實作 Singleton Pattern，單例模式設計模式讀書筆記"
+description: "Singleton Pattern 是一種常見的設計模式，用於限制某個類別只有一個實例，如何在 Golang 中實現 Singleton Pattern？本篇文章將詳細介紹 Singleton Pattern 的概念、優點和 Golang 實作 Detail，幫助你更好地理解和應用這個設計模式。"
 author: VagrantPi
 tags: Design_Pattern Golang
 imgurl-fb: /public/img/index/gopher-fb.jpg
