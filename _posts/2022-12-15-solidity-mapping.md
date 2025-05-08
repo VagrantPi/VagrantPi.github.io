@@ -4,7 +4,7 @@ title: "Solidity 中的 Mapping"
 subtitle: "Solidity Mapping"
 description: "Solidity 中想同時擁有 Mapping 與 array 的特性"
 author: VagrantPi
-tags: Note Ethereum Blockchain
+tags: Ethereum Blockchain
 imgurl-fb: /public/img/index/ethrttock.jpg
 imgurl: /public/img/index/smart-contract.png
 imgalt: smart-contract

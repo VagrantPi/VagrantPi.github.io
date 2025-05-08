@@ -4,7 +4,7 @@ title: "開發環境預裝工具"
 subtitle: 開發環境預裝工具
 description: "開發環境預裝工具"
 author: VagrantPi
-tags: Note
+tags: Other
 imgurl-fb: /public/apple-touch-icon-144-precomposed.png
 imgurl: /public/apple-touch-icon-144-precomposed.png
 imgalt: VagrantPi 

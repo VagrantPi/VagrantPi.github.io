@@ -9,6 +9,14 @@ Website: https://vagrantpi.github.io/
 ## install dependency
 
 ```
+brew install rbenv ruby-build
+
+echo 'eval "$(rbenv init -)"' >> ~/.zshrc
+source ~/.zshrc
+
+rbenv install 3.2.2
+rbenv global 3.2.2
+
 gem install bundler
 bundle install
 ```

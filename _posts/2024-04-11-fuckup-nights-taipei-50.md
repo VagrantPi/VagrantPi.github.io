@@ -4,7 +4,7 @@ title: "Fuckup Nights Taipei 搞砸之夜 vol.50 「我如何搞砸我創辦的�
 subtitle: Fuckup Nights Taipei - 活動筆記
 description: "Fuckup Nights Taipei - 活動筆記"
 author: VagrantPi
-tags: EventNote FuckupNightsTaipei 創業
+tags: EventNote 創業
 imgurl-fb: /public/img/index/fuckup-night-50-icon.png
 imgurl: /public/img/index/fuckup-night-50-icon.png
 imgalt: fuckup-night-50-icon 

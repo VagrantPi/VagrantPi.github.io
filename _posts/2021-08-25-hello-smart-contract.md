@@ -4,7 +4,7 @@ title: "Hello Smart Contract"
 subtitle: "Hello Smart Contract"
 description: "Ethereum Smart Contract 初體驗"
 author: VagrantPi
-tags: Note Ethereum Blockchain
+tags: Ethereum Blockchain
 imgurl-fb: /public/img/index/smart-contract.png
 imgurl: /public/img/index/smart-contract.png
 imgalt: smart-contract 
