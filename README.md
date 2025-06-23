@@ -14,10 +14,10 @@ brew install rbenv ruby-build
 echo 'eval "$(rbenv init -)"' >> ~/.zshrc
 source ~/.zshrc
 
-rbenv install 3.2.2
-rbenv global 3.2.2
+rbenv install 3.1.4
+rbenv global 3.1.4
 
-gem install bundler
+gem install --user-install bundler
 bundle install
 ```
 
