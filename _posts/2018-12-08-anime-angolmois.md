@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "アンゴルモア 元寇合戦記"
-subtitle: 動畫推坑
+tagline: 動畫推坑
 description: "アンゴルモア 元寇合戦記 推坑文"
 author: VagrantPi
 tags: anime

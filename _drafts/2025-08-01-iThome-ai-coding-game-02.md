@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Day02 - 零經驗也能啟動專案？交給 AI 全權處理！"
-subtitle: ""
+tagline: ""
 description: "在沒有任何遊戲背景下，我讓 ChatGPT 當我的專案經理，一句指令開啟開發之路。"
 author: VagrantPi
 tags: iThome AI

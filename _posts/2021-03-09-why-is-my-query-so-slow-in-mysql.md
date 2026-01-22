@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why is my query so slow in MySQL? 活動筆記"
-subtitle: "MySQL 查詢慢的原因是什麼？優化 MySQL 查詢效率的技巧"
+tagline: "MySQL 查詢慢的原因是什麼？優化 MySQL 查詢效率的技巧"
 description: "MySQL 查詢慢的原因是什麼？這篇文章將幫助您了解 MySQL 查詢慢的原因，並提供一些優化 MySQL 查詢效率的技巧"
 author: VagrantPi
 tags: EventNote DB

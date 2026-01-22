@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "開發環境預裝工具"
-subtitle: "開發環境必備工具清單 | 2021 年最新工具安裝指南"
+tagline: "開發環境必備工具清單 | 2021 年最新工具安裝指南"
 description: "幫助您快速建立開發環境，整理了常用的開發工具清單，2021 年最新的工具安裝指南，幫助您快速上手開始 coding。"
 author: VagrantPi
 tags: Other

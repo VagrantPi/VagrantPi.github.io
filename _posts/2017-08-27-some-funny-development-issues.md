@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 專案開發問題集!~
-subtitle: Some funny development issues
+tagline: Some funny development issues
 description: 這邊用來存放些開發時遇到的奇葩問題 (´c_`)
 author: VagrantPi
 tags: funny environment

@@ -84,5 +84,5 @@ docker run --rm \
 ### AI 優化 SEO prompt
 
 ```
-掃描這篇文章，優化SEO的情況下幫我建立 SEO 夠好的 subtitle, description，請使用中文
+掃描這篇文章，優化SEO的情況下幫我建立 SEO 夠好的 tagline, description，請使用中文
 ```

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "納瓦爾寶典-矽谷傳奇創投家的投資哲學與人生智慧 - 讀書筆記"
-subtitle: ""
+tagline: ""
 description: ""
 author: VagrantPi
 tags: 讀書心得 自我提升

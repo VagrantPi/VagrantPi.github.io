@@ -1,7 +1,7 @@
 ---
 layout: post
 title: go-ethereum Signature
-subtitle: "go-ethereum Signature"
+tagline: "go-ethereum Signature"
 description: "go-ethereum Signature"
 author: VagrantPi
 tags: Golang Blockchain

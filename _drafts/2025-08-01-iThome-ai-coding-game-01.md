@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Day01 | 從發想出發：為什麼是迷因？為什麼是河馬？"
-subtitle: "用 ChatGPT 企劃一款放置型療癒遊戲"
+tagline: "用 ChatGPT 企劃一款放置型療癒遊戲"
 description: "一個放置遊戲的靈感從哪來？聊聊我為什麼選擇『迷因河馬』做為主角，以及這背後的技術與創意初衷。"
 author: VagrantPi
 tags: iThome AI SideProject

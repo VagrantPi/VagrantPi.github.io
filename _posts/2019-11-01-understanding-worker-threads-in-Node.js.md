@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Understanding Worker Threads in Node.js"
-subtitle: "Node.js 多線程 Worker Threads 實踐指南：提高 CPU 效能的實驗性解決方案"
+tagline: "Node.js 多線程 Worker Threads 實踐指南：提高 CPU 效能的實驗性解決方案"
 description: "Node.js 的多線程 Worker Threads 是一個實驗性解決方案，幫助開發者提高應用程式的 CPU 效能，以下是 Worker Threads 的使用指南和實踐經驗"
 author: VagrantPi
 tags: Node.js JavaScript

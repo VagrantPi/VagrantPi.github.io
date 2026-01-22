@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Docker 預設 Log 無限增長問題"
-subtitle: "Docker 預設 Log 無限增長問題 - Docker configure logging drivers 解決方案"
+tagline: "Docker 預設 Log 無限增長問題 - Docker configure logging drivers 解決方案"
 description: "系統硬碟異常增加，排查 Docker Container log file 無限增長的問題，使用 Docker configure logging drivers 來解決"
 author: VagrantPi
 tags: Docker Prometheus Grafana
@@ -47,10 +47,12 @@ Put app data to redis error: MISCONF Redis is configured to save RDB snapshots, 
 
 可以使用下面指令取得目前的 log 儲存方式
 
-```
+{% raw %}
+```shell
 $ docker info --format '{{.LoggingDriver}}'
 json-file
 ```
+{% endraw %}
 
 而 Docker 支援很多種 log 儲存方法
 

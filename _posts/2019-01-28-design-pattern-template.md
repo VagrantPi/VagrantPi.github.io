@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Design Pattern 筆記 - Template Pattern"
-subtitle: "Golang 實踐設計模式 - Template Pattern"
+tagline: "Golang 實踐設計模式 - Template Pattern"
 description: "Template Pattern 是一種行為設計模式，讓我們可以定義演算法的骨架，但將一些步驟延遲到子 class 實踐。透過 Golang 實踐設計模式，讓我們更容易理解這個模式，並應用在實際開發中。"
 author: VagrantPi
 tags: Design_Pattern Golang

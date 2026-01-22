@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Solidity 中的 Mapping"
-subtitle: "Solidity Mapping 使用教程 - Mapping  vs  array"
+tagline: "Solidity Mapping 使用教程 - Mapping  vs  array"
 description: "Solidity 中 Mapping  vs  array 的差異、使用教程，如何在智能合約中使用 Mapping"
 author: VagrantPi
 tags: Ethereum Blockchain

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Fuckup Nights Taipei 搞砸之夜 vol.50 「我如何搞砸我創辦的公司」 - 活動筆記"
-subtitle: "創業搞砸的故事 - Fuckup Nights Taipei vol.50 分享活動筆記"
+tagline: "創業搞砸的故事 - Fuckup Nights Taipei vol.50 分享活動筆記"
 description: "Fuckup Nights Taipei vol.50 活動筆記，與會者分享了他們創業搞砸的經驗和教訓，幫助您更好地認識創業的風險和挑戰。"
 author: VagrantPi
 tags: EventNote 創業

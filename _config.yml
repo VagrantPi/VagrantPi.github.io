@@ -57,5 +57,9 @@ social:
 jekyll-seo-tag:
   default:
     name: "VagrantPi Blog"
+    locale: "zh-TW"
+    author:
+      name: VagrantPi
+      url: https://vagrantpi.github.io/about/
     description: "生活札記，記錄些學習筆記和生活"
     image: "https://vagrantpi.github.io/public/apple-touch-icon-144-precomposed.png"
