@@ -4,7 +4,7 @@ title: "DevOps Taiwan Meetup #74 筆記 - Grafana AI 應用與多租戶 SaaS 架
 tagline: "從 AI 查修到 SaaS 架構演進，週末充值信仰的 DevOps 筆記。"
 description: "紀錄 DevOps Taiwan Meetup #74 內容，包含《Grafana Zero to Hero》與《建構多租戶 SaaS 架構》兩本新書導讀，探討 Grafana 結合 Claude MCP 的查修應用，以及 SaaS 多租戶架構的四大難題與解決方案。"
 author: VagrantPi
-tags: DevOps Grafana SaaS Architecture Meetup EventNote AI
+tags: DevOps Grafana EventNote AI
 imgurl-fb: /public/img/index/grafana.jpeg
 imgurl: /public/img/index/grafana.jpeg
 image: /public/img/index/grafana.jpeg

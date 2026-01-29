@@ -4,7 +4,7 @@ title: 專案開發問題集!~
 tagline: Some funny development issues
 description: 這邊用來存放些開發時遇到的奇葩問題 (´c_`)
 author: VagrantPi
-tags: funny environment
+tags: 坑
 ---
 
 專案的進行中難免會遇到些問題，這篇用來記錄些花費多時最後發現的奇葩問題 (´c_`)

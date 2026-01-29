@@ -4,7 +4,7 @@ title: "DevOps Taiwan Meetup #75（實體）- TDD 隨你問 之 AMA 你今嘛底
 tagline: "TDD 到底怎麼導入？AI 時代還需要寫測試嗎？"
 description: "久違的實體 Meetup！這次 DevOps Taiwan #75 聊的是大家都很有興趣但也最常卡關的 TDD。從 AI 輔助開發、團隊導入困境到測試粒度的拿捏，這篇筆記整理了當天 AMA 的精華問答。"
 author: VagrantPi
-tags: DevOps TDD Testing Meetup EventNote
+tags: DevOps TDD Testing EventNote
 imgurl-fb: /public/img/post/devops-taiwan/75/devops-meetup-75-tdd.jpg
 imgurl: /public/img/post/devops-taiwan/75/devops-meetup-75-tdd.jpg
 image: /public/img/post/devops-taiwan/75/devops-meetup-75-tdd.jpg
