@@ -24,6 +24,8 @@ imgalt: "DevOps Taiwan Meetup 筆記圖示"
 
 所以此次題目都蠻感興趣的
 
+<br>
+
 ---
 
 ## Grafana：建立系統全知視角的捷徑
@@ -71,6 +73,8 @@ Grafana 的 Drilldown App 解決了這個痛點，讓你可以**不需要下各�
 
 * **Q: 如何備份？**
 * **A:** 單一 Dashboard 備份 JSON 即可；整個 Grafana 資料庫預設是 SQLite，直接備份檔案就行。另外也有第三方 App 可以 Dump IaC 格式出來。
+
+<br>
 
 ---
 
@@ -133,6 +137,8 @@ Grafana 的 Drilldown App 解決了這個痛點，讓你可以**不需要下各�
 
 * **Q: SaaS 的計價問題怎麼算？**
 * **A:** 國外大廠很多都用「點數 (Credit)」制。好處是底層計算方式可以**比較黑箱**，廠商精算後再轉換成點數賣給客戶（這招真的很賊 XD）。
+
+<br>
 
 ---
 
