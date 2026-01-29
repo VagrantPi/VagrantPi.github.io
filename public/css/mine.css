@@ -1,67 +1,81 @@
 .avatar {
   width: 30%;
-  display:block;
-  margin:auto;
+  display: block;
+  margin: auto;
   border-radius: 50% !important;
   box-shadow: 5px 5px 5px #333 !important;
 }
+
 .nolinkline {
   text-decoration: none;
 }
+
 .tags {
-	border-radius: 5px;
-	padding: .2em .6em .3em;
-	font-weight: bold;
-	background-color: #268bd2;
-	color: white;
-	font-style: normal;
-	opacity: 0.7;
+  border-radius: 5px;
+  padding: .2em .6em .3em;
+  font-weight: bold;
+  background-color: #268bd2;
+  color: white;
+  font-style: normal;
+  opacity: 0.7;
   box-shadow: 3px 5px 8px black;
 }
+
 .tags-status {
   display: inline-block;
   margin: 10px 12px 12px -3px;
 }
+
 .tag-cloud {
   margin: 25px 0px 30px -35px;
 }
+
 .archiveli {
   list-style: none;
   padding: 0 0 15px;
 }
+
 .archiveli .month {
   width: 10%;
   vertical-align: top;
   color: #9a9a9a;
 }
+
 .archiveli div {
   display: inline-block;
 }
+
 .indeximg {
-  float:right;
-  margin:0 0 10px 10px;
+  float: right;
+  margin: 0 0 10px 10px;
   box-shadow: 10px 11px 13px 0px grey;
   max-height: 150px;
   max-width: 150px;
   padding: 10px;
 }
+
 #error-text {
-	color: rgba(0,0,0,0.4);
-	font-size: 50px;
-	line-height: 21px;
-	margin-bottom: 60px;
-	margin-top: 30px;
-	white-space: pre-wrap;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 50px;
+  line-height: 21px;
+  margin-bottom: 60px;
+  margin-top: 30px;
+  white-space: pre-wrap;
 }
-#directory ul, ol, dl {
+
+#directory ul,
+ol,
+dl {
   margin-bottom: 0;
 }
+
 @media screen and (min-width: 1450px) {
   .post-directory h3 {
     margin-left: 0px;
     margin-right: 15px;
     font-size: 40px;
   }
+
   .post-directory {
     border: 1px solid #d7d7d7;
     border-radius: 8px;
@@ -79,20 +93,21 @@
     padding-bottom: 10px;
     padding-right: 10px;
     z-index: 9999;
-    width: 300px; /* 可依需求調整 */
+    width: 300px;
+    /* 可依需求調整 */
   }
-  
+
   .post-directory-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  
+
   .post-directory h3 {
     margin: 0;
     font-size: 20px;
   }
-  
+
   .close-directory {
     background: none;
     border: none;
@@ -101,31 +116,48 @@
     color: #888;
     transition: color 0.2s;
   }
-  
+
   .close-directory:hover {
     color: #f00;
   }
 }
+
 @media screen and (max-width: 768px) {
   .post-directory h3 {
     margin-left: 0px;
     margin-right: 15px;
   }
+
   .close-directory {
     display: none;
   }
 }
+
 .post-date {
   margin-bottom: 0px;
 }
+
 .tag-tagline {
   display: block;
   margin-top: -8px;
   margin-bottom: 8px;
 }
+
 .tag-tail {
   display: block;
   margin-top: 8px;
   margin-bottom: 8px;
   margin-left: -6px;
+}
+
+@media (min-width: 64em) {
+  .content {
+    max-width: 40rem !important;
+  }
+}
+
+@media (min-width: 90em) {
+  .content {
+    max-width: 50rem !important;
+  }
 }
